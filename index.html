@@ -1,159 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masjid-e-Tawheed Ahle Hadees | Bangalore</title>
-  <meta name="description" content="Masjid-e-Tawheed Ahle Hadees, Umar Bagh, JP Nagar, Bangalore.">
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:Arial,sans-serif;background:#07110d;color:#fff;line-height:1.6}
-    header{background:#0d241a;padding:20px;text-align:center;border-bottom:2px solid #c9a84e}
-    header h1{color:#e5c66b;font-size:28px}
-    header p{color:#ddd}
-    nav{padding:12px;text-align:center;background:#091710}
-    nav a{color:#fff;text-decoration:none;margin:0 10px}
-    .hero{text-align:center;padding:70px 20px;background:linear-gradient(#07110dcc,#07110dcc),url('images/mosque.jpg') center/cover}
-    .hero h2{font-size:38px;color:#e5c66b;margin-bottom:10px}
-    .hero p{font-size:18px}
-    .btn{display:inline-block;margin-top:20px;padding:12px 22px;background:#c9a84e;color:#07110d;text-decoration:none;border-radius:6px;font-weight:bold}
-    section{padding:45px 20px;max-width:1000px;margin:auto}
-    section h2{text-align:center;color:#e5c66b;margin-bottom:20px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .card{background:#10251b;padding:22px;border:1px solid #35513f;border-radius:10px;text-align:center}
-    footer{text-align:center;padding:25px;background:#091710;border-top:1px solid #35513f;color:#ccc}
-  </style>
-</head>
-<body>
-  <header>
-    <img src="logo-transparent.png" alt="Masjid-e-Tawheed Logo" style="width:90px;height:auto;display:block;margin:0 auto 10px;">
-    <h1>Masjid-e-Tawheed Ahle Hadees</h1>
-    <p>Umar Bagh, JP Nagar, Bangalore</p>
-  </header>
-    
-    
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <nav>
+<title>Masjid-e-Tawheed Ahle Hadees | Bangalore</title>
+
+<meta name="description" content="Masjid-e-Tawheed Ahle Hadees, Umar Bagh, JP Nagar, Bangalore. Islamic programs, Jumu'ah Khutbah, Maktab and community services.">
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f7f7f7;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:#063b2b;
+    color:white;
+    text-align:center;
+    padding:18px 15px;
+}
+
+.logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background:white;
+    border-radius:50%;
+    padding:5px;
+}
+
+header h1{
+    margin-top:10px;
+    font-size:27px;
+    color:#f4d27a;
+}
+
+header p{
+    margin-top:5px;
+    font-size:15px;
+    color:#eee;
+}
+
+nav{
+    background:#04291f;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    padding:12px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:9px 13px;
+    border-radius:6px;
+    font-size:14px;
+}
+
+nav a:hover{
+    background:#c9a44c;
+    color:#111;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,40,28,.82),rgba(0,40,28,.82)),
+    url("logo.png") center/cover;
+    min-height:430px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:40px 20px;
+    color:white;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h2{
+    font-size:42px;
+    color:#f4d27a;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#c9a44c;
+    color:#111;
+    text-decoration:none;
+    padding:12px 22px;
+    margin:5px;
+    border-radius:7px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#f4d27a;
+}
+
+section{
+    padding:55px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+section h2{
+    text-align:center;
+    color:#063b2b;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.about{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    font-size:17px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.10);
+    text-align:center;
+    border-top:4px solid #c9a44c;
+}
+
+.card h3{
+    color:#063b2b;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+.schedule{
+    background:#063b2b;
+    color:white;
+    border-radius:12px;
+    padding:25px;
+    max-width:800px;
+    margin:auto;
+}
+
+.schedule div{
+    display:flex;
+    justify-content:space-between;
+    padding:13px 5px;
+    border-bottom:1px solid rgba(255,255,255,.2);
+}
+
+.schedule div:last-child{
+    border-bottom:none;
+}
+
+.schedule strong{
+    color:#f4d27a;
+}
+
+.contact-box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.10);
+    text-align:center;
+}
+
+.contact-box p{
+    margin:10px 0;
+}
+
+footer{
+    background:#04291f;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:20px;
+}
+
+footer strong{
+    color:#f4d27a;
+}
+
+@media(max-width:600px){
+
+    header h1{
+        font-size:21px;
+    }
+
+    .hero{
+        min-height:390px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:40px 15px;
+    }
+
+    section h2{
+        font-size:26px;
+    }
+
+    .schedule div{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Masjid-e-Tawheed Logo" class="logo">
+
+    <h1>Masjid-e-Tawheed Ahle Hadees</h1>
+
+    <p>Umar Bagh, JP Nagar, Bangalore</p>
+</header>
+
+<nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#programs">Programs</a>
+    <a href="#prayer">Prayer Times</a>
     <a href="#contact">Contact</a>
-  </nav>
+</nav>
 
-  <div class="hero" id="home">
-    <h2>Welcome to Masjid-e-Tawheed</h2>
-    <p>A place of Salah, Ilm, Dawah and Community Service</p>
-    <a class="btn" href="https://wa.me/917795736080">Contact Masjid</a>
-  </div>
+<section class="hero" id="home">
+    <div class="hero-content">
 
-  <section id="about">
-    <h2>About the Masjid</h2>
-    <p style="text-align:center">
-      Masjid-e-Tawheed Ahle Hadees serves the Muslim community of Umar Bagh,
-      JP Nagar, Bangalore through Salah, Islamic education, Khutbahs, lectures
-      and community programs.
-    </p>
-  </section>
-<section>
-<h2>Prayer Timings</h2>
+        <h2>Welcome to Masjid-e-Tawheed</h2>
 
-<div class="cards">
+        <p>
+            A place of Salah, Qur'an, Sunnah, Islamic Education
+            and Community Service.
+        </p>
 
-<div class="card">
-<h3>Fajr</h3>
-<p>5:15 AM</p>
-</div>
+        <a class="btn" href="#programs">Our Programs</a>
 
-<div class="card">
-<h3>Dhuhr</h3>
-<p>1:15 PM</p>
-</div>
+        <a class="btn"
+        href="https://www.google.com/maps/search/?api=1&query=Masjid-e-Tawheed+Ahle+Hadees+Umar+Bagh+JP+Nagar+Bangalore"
+        target="_blank">
+        📍 View Location
+        </a>
 
-<div class="card">
-<h3>Asr</h3>
-<p>4:15 PM</p>
-</div>
-
-<div class="card">
-<h3>Maghrib</h3>
-<p>6:50 PM</p>
-</div>
-
-<div class="card">
-<h3>Isha</h3>
-<p>8:15 PM</p>
-</div>
-
-<div class="card">
-<h3>Jumu'ah</h3>
-<p>1:25 PM</p>
-</div>
-
-</div>
-</section>
-  <section id="programs">
-    <h2>Programs & Activities</h2>
-    <div class="cards">
-    <div class="card">
-<h3>Jumu'ah Khutbah</h3>
-<p>Weekly Jumu'ah Khutbah & Islamic Reminder</p>
-</div>
-
-<div class="card">
-<h3>Islamic Lectures</h3>
-<p>Qur'an, Sunnah & Islamic Knowledge</p>
-</div>
-
-<div class="card">
-<h3>Maktab</h3>
-<p>Islamic Education for Children</p>
-</div>
-
-<div class="card">
-<h3>Community Service</h3>
-<p>Serving the Community with Care</p>
-</div>
-      
-      
-      
     </div>
-  </section>
+</section>
 
-  <section id="contact">
-    <h2>Contact & Location</h2>
-    <p style="text-align:center">
-      Masjid-e-Tawheed Ahle Hadees<br>
-      Umar Bagh, JP Nagar, Bangalore
+<section id="about">
+
+    <h2>About Masjid</h2>
+
+    <p class="about">
+        Masjid-e-Tawheed Ahle Hadees is located in Umar Bagh,
+        JP Nagar, Bangalore. The Masjid is dedicated to Salah,
+        Qur'an, authentic Sunnah, Islamic education and serving
+        the Muslim community.
     </p>
-<div style="text-align:center; margin-top:20px;">
-  <a class="btn" href="https://maps.app.goo.gl/M5ftQav2RKX3AboJ7" target="_blank">
-    📍 View Location on Google Maps
-  </a>
-</div>
 
-<div style="text-align:center; margin-top:20px;">
-  <a class="btn" href="https://youtube.com/@MasjidETawheed-blr" target="_blank">
-    ▶️ Watch on YouTube
-  </a>
-</div>
-    
+</section>
 
-<div style="text-align:center; margin-top:20px;">
-  <a class="btn" href="https://wa.me/917795736080">
-    💬 Contact on WhatsApp
-  </a>
-  
+<section id="programs">
 
+    <h2>Programs & Activities</h2>
 
-  </section>
+    <div class="cards">
 
-  
-  
+        <div class="card">
+            <h3>Jumu'ah Khutbah</h3>
+            <p>
+                Weekly Jumu'ah Khutbah and Islamic reminders.
+            </p>
+        </div>
 
-  <footer>
-    © 2026 Masjid-e-Tawheed Ahle Hadees. All Rights Reserved.
-  </footer>
+        <div class="card">
+            <h3>Islamic Lectures</h3>
+            <p>
+                Qur'an, Sunnah and beneficial Islamic lectures.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Maktab</h3>
+            <p>
+                Islamic education and Qur'an learning for children.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Community Service</h3>
+            <p>
+                Serving the community through beneficial activities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Ramadan Programs</h3>
+            <p>
+                Special Ramadan activities, Taraweeh and Islamic reminders.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Seerah Programs</h3>
+            <p>
+                Learning about the life and guidance of Prophet Muhammad ﷺ.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="prayer">
+
+    <h2>Prayer Times</h2>
+
+    <div class="schedule">
+
+        <div>
+            <span>Fajr</span>
+            <strong>5:50 AM</strong>
+        </div>
+
+        <div>
+            <span>Dhuhr</span>
+            <strong>1:15 PM</strong>
+        </div>
+
+        <div>
+            <span>Asr</span>
+            <strong>4:15 PM</strong>
+        </div>
+
+        <div>
+            <span>Maghrib</span>
+            <strong>6:30 PM</strong>
+        </div>
+
+        <div>
+            <span>Isha</span>
+            <strong>8:30 PM</strong>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact & Location</h2>
+
+    <div class="contact-box">
+
+        <p>
+            <strong>Masjid-e-Tawheed Ahle Hadees</strong>
+        </p>
+
+        <p>
+            Umar Bagh, JP Nagar, Bangalore
+        </p>
+
+        <a class="btn"
+        href="https://www.google.com/maps/search/?api=1&query=Masjid-e-Tawheed+Ahle+Hadees+Umar+Bagh+JP+Nagar+Bangalore"
+        target="_blank">
+        📍 Open Google Maps
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 <strong>Masjid-e-Tawheed Ahle Hadees</strong>
+    </p>
+
+    <p>
+        Umar Bagh, JP Nagar, Bangalore
+    </p>
+
+</footer>
+
 </body>
-
-</html>
+</html>h
