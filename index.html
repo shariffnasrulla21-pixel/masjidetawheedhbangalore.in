@@ -423,6 +423,67 @@ footer strong{
     </p>
 
 </footer>
+<script>
+    const prayerTimes = [
+      {name:"Fajr", time:"05:15"},
+        {name:"Dhuhr", time:"13:15"},
+          {name:"Asr", time:"16:15"},
+            {name:"Maghrib", time:"18:30"},
+              {name:"Isha", time:"20:30"}
+              ];
 
+              function updatePrayerClock() {
+                const now = new Date();
+                  let next = null;
+
+                    for (const prayer of prayerTimes) {
+                        const [h,m] = prayer.time.split(":").map(Number);
+                            const t = new Date();
+                                t.setHours(h,m,0,0);
+
+                                    if (t > now) {
+                                          next = { ...prayer, date:t };
+                                                break;
+                                                    }
+                                                      }
+
+                                                        if (!next) {
+                                                            const [h,m] = prayerTimes[0].time.split(":").map(Number);
+                                                                const t = new Date();
+                                                                    t.setDate(t.getDate()+1);
+                                                                        t.setHours(h,m,0,0);
+                                                                            next = { ...prayerTimes[0], date:t };
+                                                                              }
+
+                                                                                let diff = next.date - now;
+                                                                                  const hours = Math.floor(diff / 3600000);
+                                                                                    diff %= 3600000;
+                                                                                      const minutes = Math.floor(diff / 60000);
+                                                                                        const seconds = Math.floor((diff % 60000) / 1000);
+
+                                                                                          let box = document.getElementById("livePrayerBox");
+
+                                                                                            if (!box) {
+                                                                                                box = document.createElement("div");
+                                                                                                    box.id = "livePrayerBox";
+                                                                                                        box.style.cssText =
+                                                                                                              "margin:20px auto;padding:20px;text-align:center;background:#063d30;color:#f4d27a;border-radius:18px;max-width:600px;font-family:Arial;";
+                                                                                                                  document.body.insertBefore(box, document.body.firstChild);
+                                                                                                                    }
+
+                                                                                                                      box.innerHTML =
+                                                                                                                          "<div style='font-size:18px;color:white'>NEXT PRAYER</div>" +
+                                                                                                                              "<div style='font-size:30px;font-weight:bold;margin:8px 0'>" +
+                                                                                                                                  next.name + "</div>" +
+                                                                                                                                      "<div style='font-size:26px'>" +
+                                                                                                                                          String(hours).padStart(2,"0") + ":" +
+                                                                                                                                              String(minutes).padStart(2,"0") + ":" +
+                                                                                                                                                  String(seconds).padStart(2,"0") +
+                                                                                                                                                      "</div>";
+                                                                                                                                                      }
+
+                                                                                                                                                      updatePrayerClock();
+                                                                                                                                                      setInterval(updatePrayerClock,1000);
+                                                                                                                                                      </script>
 </body>
 </html>
