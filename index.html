@@ -358,7 +358,7 @@ footer strong{
 
         <div>
             <span>Fajr</span>
-            <strong>Adhan:4:50  AM<br>Jama'at: 5:15 AM</strong>
+            <strong>Adhan:4:45  AM<br>Jama'at: 5:15 AM</strong>
         </div>
 
         <div>
@@ -420,6 +420,110 @@ footer strong{
     </p>
 
 </footer>
-
+<!-- Digital Clock + Next Prayer Countdown -->
+<div id="prayerClockBox" style="
+  max-width:600px;
+    margin:25px auto;
+      padding:25px;
+        border-radius:20px;
+          background:#063b2b;
+            color:white;
+              text-align:center;
+                box-shadow:0 8px 25px rgba(0,0,0,0.18);
+                ">
+                  <div style="font-size:16px;opacity:.85;">Masjid-e-Tawheed Ahle Hadees</div>
+                  
+                    <div id="digitalClock" style="
+                        font-size:42px;
+                            font-weight:bold;
+                                margin:8px 0;
+                                    color:#d4af37;
+                                      ">00:00:00</div>
+                                      
+                                        <div style="font-size:18px;margin-top:8px;">
+                                            Next Prayer
+                                              </div>
+                                              
+                                                <div id="nextPrayer" style="
+                                                    font-size:28px;
+                                                        font-weight:bold;
+                                                            margin-top:5px;
+                                                              ">Fajr</div>
+                                                              
+                                                                <div id="countdown" style="
+                                                                    font-size:24px;
+                                                                        font-weight:bold;
+                                                                            margin-top:8px;
+                                                                                color:#d4af37;
+                                                                                  ">00:00:00</div>
+                                                                                  </div>
+                                                                                  
+                                                                                  <script>
+                                                                                  const prayers = [
+                                                                                    { name: "Fajr", time: "05:15" },
+                                                                                      { name: "Dhuhr", time: "13:15" },
+                                                                                        { name: "Asr", time: "16:15" },
+                                                                                          { name: "Maghrib", time: "18:30" },
+                                                                                            { name: "Isha", time: "20:30" }
+                                                                                            ];
+                                                                                            
+                                                                                            function updatePrayerClock() {
+                                                                                              const now = new Date();
+                                                                                              
+                                                                                                // Digital clock
+                                                                                                  document.getElementById("digitalClock").textContent =
+                                                                                                      now.toLocaleTimeString("en-IN", {
+                                                                                                            hour: "2-digit",
+                                                                                                                  minute: "2-digit",
+                                                                                                                        second: "2-digit",
+                                                                                                                              hour12: true
+                                                                                                                                  });
+                                                                                                                                  
+                                                                                                                                    let next = null;
+                                                                                                                                    
+                                                                                                                                      for (const prayer of prayers) {
+                                                                                                                                          const [hour, minute] = prayer.time.split(":").map(Number);
+                                                                                                                                          
+                                                                                                                                              const prayerTime = new Date(now);
+                                                                                                                                                  prayerTime.setHours(hour, minute, 0, 0);
+                                                                                                                                                  
+                                                                                                                                                      if (prayerTime > now) {
+                                                                                                                                                            next = {
+                                                                                                                                                                    name: prayer.name,
+                                                                                                                                                                            time: prayerTime
+                                                                                                                                                                                  };
+                                                                                                                                                                                        break;
+                                                                                                                                                                                            }
+                                                                                                                                                                                              }
+                                                                                                                                                                                              
+                                                                                                                                                                                                // If all prayers are finished, next prayer is tomorrow's Fajr
+                                                                                                                                                                                                  if (!next) {
+                                                                                                                                                                                                      const tomorrow = new Date(now);
+                                                                                                                                                                                                          tomorrow.setDate(tomorrow.getDate() + 1);
+                                                                                                                                                                                                              tomorrow.setHours(5, 15, 0, 0);
+                                                                                                                                                                                                              
+                                                                                                                                                                                                                  next = {
+                                                                                                                                                                                                                        name: "Fajr",
+                                                                                                                                                                                                                              time: tomorrow
+                                                                                                                                                                                                                                  };
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                    
+                                                                                                                                                                                                                                      document.getElementById("nextPrayer").textContent = next.name;
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                        const difference = next.time - now;
+                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                          const hours = Math.floor(difference / 3600000);
+                                                                                                                                                                                                                                            const minutes = Math.floor((difference % 3600000) / 60000);
+                                                                                                                                                                                                                                              const seconds = Math.floor((difference % 60000) / 1000);
+                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                document.getElementById("countdown").textContent =
+                                                                                                                                                                                                                                                    String(hours).padStart(2, "0") + ":" +
+                                                                                                                                                                                                                                                        String(minutes).padStart(2, "0") + ":" +
+                                                                                                                                                                                                                                                            String(seconds).padStart(2, "0");
+                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                            updatePrayerClock();
+                                                                                                                                                                                                                                                            setInterval(updatePrayerClock, 1000);
+                                                                                                                                                                                                                                                            </script>-->
 </body>
-</html>h
+</html>
