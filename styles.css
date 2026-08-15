@@ -439,3 +439,108 @@ grid-template-columns:1fr
 .hero h1{font-size:42px}
 .prayer-grid{grid-template-columns:1fr}
   }
+/* ===== PROFESSIONAL MOBILE FIX ===== */
+
+@media (max-width:768px){
+
+  .wrap{
+    width:min(94%,1180px);
+  }
+
+  .header{
+    position:relative;
+    z-index:100;
+  }
+
+  .nav{
+    min-height:72px;
+    padding:12px 0;
+  }
+
+  .brand{
+    max-width:210px;
+    line-height:1.25;
+  }
+
+  .brand small{
+    display:block;
+  }
+
+  .menu{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:48px;
+    height:44px;
+    font-size:24px;
+    flex-shrink:0;
+  }
+
+  .nav-links{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    gap:0;
+    padding:12px 0;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links a{
+    display:block;
+    width:100%;
+    padding:12px 8px;
+    font-size:18px;
+  }
+
+  .hero{
+    padding:70px 0 55px;
+    min-height:auto;
+  }
+
+  .hero h1{
+    font-size:clamp(38px,11vw,58px);
+    line-height:1.05;
+    margin-bottom:22px;
+  }
+
+  .hero p{
+    font-size:18px;
+    line-height:1.7;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    align-items:stretch;
+    gap:12px;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .section,
+  .youtube-section,
+  .contact-section{
+    padding:55px 0;
+  }
+
+  .event-grid,
+  .program-grid,
+  .prayer-grid,
+  .footer-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card,
+  .event-card,
+  .program-grid article,
+  .youtube-card,
+  .contact-card{
+    padding:20px;
+  }
+}
