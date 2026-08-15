@@ -1,2 +1,316 @@
-      
+ "use strict";
+
+const PRAYER_TIMES = [
+  ["Fajr", "05:30 AM"],
+  ["Sunrise", "06:10 AM"],
+  ["Dhuhr", "01:15 PM"],
+  ["Asr", "04:15 PM"],
+  ["Maghrib", "06:30 PM"],
+  ["Isha", "08:30 PM"]
+];
+
+const KHUTBAHS = [
+  {
+    date: "Next Friday",
+    topic: "Jumu'ah Khutbah",
+    speaker: "To Be Announced",
+    time: "12:45 PM"
+  },
+  {
+    date: "Upcoming Friday",
+    topic: "Islamic Reminder",
+    speaker: "Speaker details to be added",
+    time: "12:45 PM"
+  },
+  {
+    date: "Future Program",
+    topic: "Special Dars / Lecture",
+    speaker: "Speaker details to be added",
+    time: "To Be Announced"
+  }
+];
+
+const IMAMS = [
+  {
+    name: "Imam / Khatib",
+    role: "Imam & Khatib",
+    photo: "",
+    bio: "Official profile information can be added here."
+  },
+  {
+    name: "Imam / Khatib",
+    role: "Imam & Khatib",
+    photo: "",
+    bio: "Official profile information can be added here."
+  },
+  {
+    name: "Guest Khatib",
+    role: "Guest Speaker",
+    photo: "",
+    bio: "Guest speaker profile can be added here."
+  }
+];
+
+const VIDEOS = [
+  {
+    title: "Jumu'ah Khutbah",
+    desc: "Latest Khutbah recording",
+    id: ""
+  },
+  {
+    title: "Islamic Lecture",
+    desc: "Dars / Bayan recording",
+    id: ""
+  },
+  {
+    title: "Special Program",
+    desc: "Community program recording",
+    id: ""
+  }
+];
+
+const NEXT_PROGRAM = {
+  title: "Next Special Program",
+  date: "2026-09-01T20:00:00",
+  text: "Confirmed program details will be added here."
+};
+
+function setText(id, value) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = value;
+}
+
+function renderPrayerTimes() {
+  const grid = document.getElementById("prayerGrid");
+  if (!grid) return;
+
+  grid.innerHTML = PRAYER_TIMES.map(item => `
+    <div class="prayer-card">
+      <div class="name">${item[0]}</div>
+      <div class="time">${item[1]}</div>
+    </div>
+  `).join("");
+}
+
+function renderKhutbahs() {
+  const grid = document.getElementById("khutbahGrid");
+  if (!grid) return;
+
+  grid.innerHTML = KHUTBAHS.map(item => `
+    <article class="event">
+      <div class="date">${item.date}</div>
+      <h3>${item.topic}</h3>
+      <p>${item.speaker}</p>
+      <span>${item.time}</span>
+    </article>
+  `).join("");
+}
+
+function imamCard(item) {
+  const photo = item.photo
+    ? `<img src="${item.photo}" alt="${item.name}" loading="lazy">`
+    : `<div class="placeholder-photo">PROFILE PHOTO</div>`;
+
+  return `
+    <article class="imam">
+      <div class="imam-photo">${photo}</div>
+      <div class="imam-body">
+        <h3>${item.name}</h3>
+        <div class="eyebrow">${item.role}</div>
+        <p>${item.bio}</p>
+      </div>
+    </article>
+  `;
+}
+
+let imamStart = 0;
+
+function renderImams() {
+  const slider = document.getElementById("imamSlider");
+  if (!slider || !IMAMS.length) return;
+
+  const items = [
+    IMAMS[imamStart % IMAMS.length],
+    IMAMS[(imamStart + 1) % IMAMS.length],
+    IMAMS[(imamStart + 2) % IMAMS.length]
+  ];
+
+  slider.innerHTML = items.map(imamCard).join("");
+}
+
+function nextImam() {
+  imamStart = (imamStart + 1) % IMAMS.length;
+  renderImams();
+}
+
+function previousImam() {
+  imamStart = (imamStart - 1 + IMAMS.length) % IMAMS.length;
+  renderImams();
+}
+
+function renderVideo() {
+  const video = VIDEOS[videoIndex];
+  if (!video) return;
+
+  const area = document.getElementById("videoArea");
+
+  if (area) {
+    if (video.id) {
+      area.innerHTML = `
+        <iframe
+          width="100%"
+          height="330"
+          src="https://www.youtube.com/embed/${video.id}"
+          title="${video.title}"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      `;
+    } else {
+      area.innerHTML = `
+        <div class="video-placeholder">
+          <strong>${video.title}</strong>
+          <span>YouTube video will appear here</span>
+        </div>
+      `;
+    }
+  }
+
+  setText("videoTitle", video.title);
+  setText("videoDesc", video.desc);
+
+  const link = document.getElementById("videoLink");
+  if (link) {
+    link.href = video.id
+      ? `https://www.youtube.com/watch?v=${video.id}`
+      : "#";
+  }
+
+  const dots = document.getElementById("videoDots");
+  if (dots) {
+    dots.innerHTML = VIDEOS.map((_, i) =>
+      `<span class="${i === videoIndex ? "active" : ""}"></span>`
+    ).join("");
+  }
+}
+
+let videoIndex = 0;
+
+function nextVideo() {
+  videoIndex = (videoIndex + 1) % VIDEOS.length;
+  renderVideo();
+}
+
+function countdown() {
+  const target = new Date(NEXT_PROGRAM.date).getTime();
+  const diff = Math.max(0, target - Date.now());
+
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const mins = Math.floor((diff % 3600000) / 60000);
+  const secs = Math.floor((diff % 60000) / 1000);
+
+  setText("days", String(days).padStart(2, "0"));
+  setText("hours", String(hours).padStart(2, "0"));
+  setText("mins", String(mins).padStart(2, "0"));
+  setText("secs", String(secs).padStart(2, "0"));
+  setText("countTitle", NEXT_PROGRAM.title);
+  setText("countText", NEXT_PROGRAM.text);
+}
+
+function updateDates() {
+  const now = new Date();
+
+  setText("year", now.getFullYear());
+
+  const today = document.getElementById("today");
+  if (today) {
+    today.textContent = now.toLocaleDateString("en-IN", {
+      weekday: "long",
+      day: "2-digit",
+      month: "short",
+      year: "numeric"
+    });
+  }
+
+  const prayerDate = document.getElementById("prayerDate");
+  if (prayerDate) {
+    prayerDate.textContent = now.toLocaleDateString("en-IN", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    });
+  }
+
+  const nextFriday = new Date(now);
+  const daysUntilFriday = (5 - now.getDay() + 7) % 7;
+  nextFriday.setDate(now.getDate() + daysUntilFriday);
+
+  const friday = document.getElementById("nextFriday");
+  if (friday) {
+    friday.textContent = nextFriday.toLocaleDateString("en-IN", {
+      weekday: "long",
+      day: "2-digit",
+      month: "long",
+      year: "numeric"
+    });
+  }
+}
+
+function setupNavigation() {
+  document.querySelectorAll("a[href^='#']").forEach(link => {
+    link.addEventListener("click", event => {
+      const target = document.querySelector(link.getAttribute("href"));
+
+      if (target) {
+        event.preventDefault();
+
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+}
+
+function setupMenu() {
+  const menu = document.querySelector(".menu");
+  const nav = document.querySelector(".nav");
+
+  if (!menu || !nav) return;
+
+  menu.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  updateDates();
+  renderPrayerTimes();
+  renderKhutbahs();
+  renderImams();
+  renderVideo();
+  countdown();
+  setupNavigation();
+  setupMenu();
+
+  const next = document.getElementById("imamNext");
+  if (next) next.addEventListener("click", nextImam);
+
+  const prev = document.getElementById("imamPrev");
+  if (prev) prev.addEventListener("click", previousImam);
+
+  document.querySelectorAll("img").forEach(img => {
+    img.loading = "lazy";
+  });
+
+  setInterval(nextVideo, 7000);
+  setInterval(nextImam, 8000);
+  setInterval(countdown, 1000);
+
+  document.documentElement.classList.add("js-ready");
+
+  console.log("Masjid-e-Tawheed website system loaded successfully.");
+});     
   
