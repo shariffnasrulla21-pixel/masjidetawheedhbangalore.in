@@ -97,7 +97,8 @@ const SCHOLARS = [
   {
     name: "Shaikh Ajaz Ahamed Nadvi Hafizahullah",
     photo: "1000627731_102c02787715ee574e620..."
-  ];
+  }
+];
 
 function renderScholars() {
   const grid = document.getElementById("scholarsGrid");
