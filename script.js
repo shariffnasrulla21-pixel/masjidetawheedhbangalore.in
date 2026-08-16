@@ -55,8 +55,50 @@ const IMAMS = [
     photo: "",
     bio: "Guest speaker profile can be added here."
   }
+ 
 ];
-
+const SCHOLARS = [
+  {
+    name: "Shaikh Abdul Azeem Umari Madani Hafizahullah",
+    photo: "1000434229_d4061e62a924661630fa9..."
+  },
+  {
+    name: "Shaikh Abdul Qadeer Umari Hafizahullah",
+    photo: "1000034871_905dd019df6634062d0d7..."
+  },
+  {
+    name: "Shaikh Abdul Haseeb Umari Madani Hafizahullah",
+    photo: "1000722363_f85d57fea00a94b89b937a..."
+  },
+  {
+    name: "Shaikh Abdul Gaffar Salfi",
+    photo: "1000481026_be5ecb8db0417276d3467..."
+  },
+  {
+    name: "Shaikh Yasir Al-Jabri Madani (Jeddah)",
+    photo: "1000443782_32858afbc0e172fd90ef60..."
+  },
+  {
+    name: "Shaikh Sabir Ali Umari Aallawi Hafizahullah",
+    photo: "1000071096_b9dbd0a2cba293b671554..."
+  },
+  {
+    name: "Shaikh Abdul Azeem Madani Hafizahullah",
+    photo: "1000091870_bcd2b7cd860025b583ec0..."
+  },
+  {
+    name: "Shaikh Abdul Raheem Sagri Jamai Hafizahullah",
+    photo: "1000221596_577ee3d50631494ef05b3..."
+  },
+  {
+    name: "Shaikh Imran Ahmed Jamai Hafizahullah",
+    photo: "1000418546_ee1b8ce9dd749f274af35e..."
+  },
+  {
+    name: "Shaikh Ajaz Ahamed Nadvi Hafizahullah",
+    photo: "1000627731_102c02787715ee574e620..."
+  }
+];
 const VIDEOS = [
   {
     title: "Jumu'ah Khutbah",
