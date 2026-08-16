@@ -40,7 +40,7 @@ const IMAMS = [
   {
     name: "Imam / Khatib",
     role: "Imam & Khatib",
-    photo: "",
+    photo: "imam-photos/file_0000000040548207b389e87f917aea70.png",
     bio: "Official profile information can be added here."
   },
   {
