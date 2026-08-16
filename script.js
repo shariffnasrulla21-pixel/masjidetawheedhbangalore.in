@@ -106,7 +106,7 @@ function renderScholars() {
 
   grid.innerHTML = SCHOLARS.map(item => `
     <div class="scholar-card">
-      <img src="${item.photo}" alt="${item.name}">
+      <img src="${encodeURI(item.photo)}" alt="${item.name}">
       <h3>${item.name}</h3>
     </div>
   `).join("");
