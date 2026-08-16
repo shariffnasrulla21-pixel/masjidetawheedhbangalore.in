@@ -40,7 +40,7 @@ const IMAMS = [
 {
   name: "Shaikh Abdurrab Faizi Hafizahullah",
   role: "Imam & Khatib",
-  photo: "imam-photos/VideoCapture_20260814-174029.jpg",
+  photo: "imam-photos/b221074b9291515796d0018b9ee32ba3b751d77501f20cb7baf80da1a9149069.png",
   bio: "Imam & Khatib, Masjid-e-Tawheed Ahle Hadees"
 }
  
