@@ -84,7 +84,7 @@ const SCHOLARS = [
   },
   {
     name: "Shaikh Ajaz Ahamed Nadvi Hafizahullah",
-    photo: "1000627731_102c02787715ee574e620..."
+    photo: "1000627731_102c02787715ee574e620d2cad4fb71b-9_6_2025, 3_29_44 PM_20260816_153200_0000.jpg"
   }
 ];
 
