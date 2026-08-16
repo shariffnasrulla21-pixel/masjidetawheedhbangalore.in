@@ -178,11 +178,9 @@ function renderImams() {
   const slider = document.getElementById("imamSlider");
   if (!slider || !IMAMS.length) return;
 
-  const items = [
-    IMAMS[imamStart % IMAMS.length],
-    IMAMS[(imamStart + 1) % IMAMS.length],
-    IMAMS[(imamStart + 2) % IMAMS.length]
-  ];
+const items = [
+  IMAMS[imamStart % IMAMS.length]
+];
 
   slider.innerHTML = items.map(imamCard).join("");
 }
