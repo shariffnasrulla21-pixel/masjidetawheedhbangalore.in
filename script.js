@@ -37,24 +37,12 @@ const KHUTBAHS = [
 ];
 
 const IMAMS = [
-  {
-    name: "Imam / Khatib",
-    role: "Imam & Khatib",
-    photo: "imam-photos/file_0000000040548207b389e87f917aea70.png",
-    bio: "Official profile information can be added here."
-  },
-  {
-    name: "Imam / Khatib",
-    role: "Imam & Khatib",
-    photo: "imam-photos/file_0000000040548207b389e87f917aea70.png",
-    bio: "Official profile information can be added here."
-  },
-  {
-    name: "Guest Khatib",
-    role: "Guest Speaker",
-    photo: "",
-    bio: "Guest speaker profile can be added here."
-  }
+{
+  name: "Shaikh Abdurrab Faizi Hafizahullah",
+  role: "Imam & Khatib",
+  photo: "imam-photos/VideoCapture_20260814-174029.jpg",
+  bio: "Imam & Khatib, Masjid-e-Tawheed Ahle Hadees"
+}
  
 ];
 const SCHOLARS = [
