@@ -80,7 +80,7 @@ const SCHOLARS = [
   },
   {
     name: "Shaikh Imran Ahmed Jamai Hafizahullah",
-    photo: "1000418546_ee1b8ce9dd749f274af35e..."
+    photo: "1000418546_ee1b8ce9dd749f274af35ee0cb2be6f3-12_5_2024, 2_04_42 PM_20260816_153446_0000.png"
   },
   {
     name: "Shaikh Ajaz Ahamed Nadvi Hafizahullah",
