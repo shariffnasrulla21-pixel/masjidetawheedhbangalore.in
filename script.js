@@ -350,6 +350,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPrayerTimes();
   renderKhutbahs();
   renderImams();
+ renderScholars();
   renderVideo();
   countdown();
   setupNavigation();
