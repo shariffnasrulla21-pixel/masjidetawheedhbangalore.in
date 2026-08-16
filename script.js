@@ -27,7 +27,13 @@ const KHUTBAHS = [
     topic: "Special Dars / Lecture",
     speaker: "Speaker details to be added",
     time: "To Be Announced"
-  }
+  },
+ {
+  date: "28 August 2026",
+  topic: "Monthly Deeni Program",
+  speaker: "Shaikh Abdul Haseeb Madani Hafizahullah",
+  time: "Maghrib to Isha • Separate Arrangement for Ladies"
+ }
 ];
 
 const IMAMS = [
