@@ -76,9 +76,9 @@ const VIDEOS = [
 ];
 
 const NEXT_PROGRAM = {
-  title: "Next Special Program",
-  date: "2026-09-01T20:00:00",
-  text: "Confirmed program details will be added here."
+  title: "Monthly Deeni Program",
+date: "2026-08-28T18:30:00",
+text: "Shaikh Abdul Haseeb Madani Hafizahullah • Maghrib to Isha • Separate Arrangement for Ladies"
 };
 
 function setText(id, value) {
