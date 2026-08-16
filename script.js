@@ -60,7 +60,7 @@ const IMAMS = [
 const SCHOLARS = [
   {
     name: "Shaikh Abdul Azeem Umari Madani Hafizahullah",
-    photo: "1000434229_d4061e62a924661630fa9..."
+    photo: "1000434229_d4061e62a924661630fa9183e7d969cf-12_25_2024, 3_41_20 PM_20260816_153434_0000.png"
   },
   {
     name: "Shaikh Abdul Qadeer Umari Hafizahullah",
