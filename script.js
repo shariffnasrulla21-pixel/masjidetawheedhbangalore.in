@@ -64,7 +64,7 @@ const SCHOLARS = [
   },
   {
     name: "Shaikh Yasir Al-Jabri Madani (Jeddah)",
-    photo: "1000443782_32858afbc0e172fd90ef60..."
+    photo: "1000443782_32858afbc0e172fd90ef6093cbe38bf9-1_10_2025, 9_56_17 PM_20260816_153407_0000.jpg"
   },
   {
     name: "Shaikh Sabir Ali Umari Aallawi Hafizahullah",
