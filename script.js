@@ -56,7 +56,7 @@ const SCHOLARS = [
   },
   {
     name: "Shaikh Abdul Haseeb Umari Madani Hafizahullah",
-    photo: "1000722363_f85d57fea00a94b89b937a..."
+    photo: "1000722363_f85d57fea00a94b89b937a77a28a1422-11_29_2025, 7_39_04 AM_20260816_153112_0000.png"
   },
   {
     name: "Shaikh Abdul Gaffar Salfi",
