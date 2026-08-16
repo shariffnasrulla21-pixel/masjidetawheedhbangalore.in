@@ -97,8 +97,20 @@ const SCHOLARS = [
   {
     name: "Shaikh Ajaz Ahamed Nadvi Hafizahullah",
     photo: "1000627731_102c02787715ee574e620..."
-  }
-];
+  ];
+
+function renderScholars() {
+  const grid = document.getElementById("scholarsGrid");
+  if (!grid) return;
+
+  grid.innerHTML = SCHOLARS.map(item => `
+    <div class="scholar-card">
+      <img src="${item.photo}" alt="${item.name}">
+      <h3>${item.name}</h3>
+    </div>
+  `).join("");
+}
+document.addEventListener("DOMContentLoaded", renderScholars);
 const VIDEOS = [
   {
     title: "Jumu'ah Khutbah",
