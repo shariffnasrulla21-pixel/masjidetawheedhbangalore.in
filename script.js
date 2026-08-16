@@ -60,7 +60,7 @@ const SCHOLARS = [
   },
   {
     name: "Shaikh Abdul Gaffar Salfi",
-    photo: "1000481026_be5ecb8db0417276d3467..."
+    photo: "1000481026_be5ecb8db0417276d346771d6f8f05c6-2_23_2025, 11_13_51 PM_20260816_153338_0000.png"
   },
   {
     name: "Shaikh Yasir Al-Jabri Madani (Jeddah)",
