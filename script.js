@@ -230,7 +230,7 @@ function renderVideo() {
   if (link) {
     link.href = video.id
       ? `https://www.youtube.com/watch?v=${video.id}`
-      : "#";
+      : "https://www.youtube.com/@MasjidETawheed-blr";
   }
 
   const dots = document.getElementById("videoDots");
