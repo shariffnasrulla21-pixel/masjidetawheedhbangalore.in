@@ -544,3 +544,28 @@ grid-template-columns:1fr
     padding:20px;
   }
 }
+.youtube-btn{
+  background:#ff0000;
+  color:#fff;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+}
+
+.youtube-icon{
+  width:28px;
+  height:20px;
+  background:#fff;
+  color:#ff0000;
+  border-radius:6px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  font-weight:900;
+}
+
+.youtube-btn:hover{
+  background:#cc0000;
+  color:#fff;
+}
