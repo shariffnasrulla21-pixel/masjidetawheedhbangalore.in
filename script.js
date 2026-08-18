@@ -104,7 +104,7 @@ const VIDEOS = [
   {
     title: "Jumu'ah Khutbah",
     desc: "Latest Khutbah recording",
-    id: ""
+    id: "r_80auKLSws"
   },
   {
     title: "Islamic Lecture",
