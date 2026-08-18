@@ -582,3 +582,512 @@ grid-template-columns:1fr
   gap:5px;
   white-space:nowrap;
 }
+/* =========================================================
+   MASJID-E-TAWHEED | PREMIUM DIGITAL DESIGN 2026–27
+   Final responsive visual upgrade
+   ========================================================= */
+
+:root{
+  --mt-green:#061f18;
+  --mt-green-2:#092c22;
+  --mt-green-3:#0d392b;
+  --mt-gold:#d8b65a;
+  --mt-gold-light:#f0d889;
+  --mt-white:#f8f7f1;
+  --mt-muted:#b9c7c1;
+  --mt-line:rgba(216,182,90,.22);
+  --mt-glass:rgba(255,255,255,.055);
+  --mt-shadow:0 20px 60px rgba(0,0,0,.28);
+}
+
+/* ---------- GLOBAL ---------- */
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+    radial-gradient(circle at 15% 10%,rgba(216,182,90,.06),transparent 28%),
+    radial-gradient(circle at 85% 30%,rgba(20,110,82,.12),transparent 32%),
+    var(--mt-green) !important;
+  color:var(--mt-white) !important;
+  font-family:Inter,Arial,sans-serif !important;
+}
+
+.wrap{
+  width:min(1180px,92%) !important;
+  margin:auto !important;
+}
+
+/* ---------- TOP BAR ---------- */
+
+.topbar{
+  background:rgba(3,20,16,.92) !important;
+  border-bottom:1px solid var(--mt-line) !important;
+  color:var(--mt-gold-light) !important;
+  font-size:12px !important;
+  letter-spacing:.4px;
+  backdrop-filter:blur(12px);
+}
+
+/* ---------- HEADER ---------- */
+
+.header{
+  position:sticky !important;
+  top:0;
+  z-index:1000;
+  background:rgba(5,31,24,.94) !important;
+  border-bottom:1px solid var(--mt-line) !important;
+  box-shadow:0 10px 35px rgba(0,0,0,.22) !important;
+  backdrop-filter:blur(18px);
+}
+
+.header .nav{
+  min-height:82px !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:18px !important;
+}
+
+.header .brand{
+  display:flex !important;
+  align-items:center !important;
+  gap:12px !important;
+  text-decoration:none !important;
+  flex:1 !important;
+  min-width:0;
+}
+
+.header .brand-mark{
+  width:46px !important;
+  height:46px !important;
+  min-width:46px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  border:1px solid rgba(216,182,90,.65) !important;
+  border-radius:13px !important;
+  background:linear-gradient(145deg,rgba(216,182,90,.15),rgba(216,182,90,.035)) !important;
+  color:var(--mt-gold-light) !important;
+  font-weight:900 !important;
+  letter-spacing:1px;
+  box-shadow:0 0 25px rgba(216,182,90,.08);
+}
+
+.header .brand b{
+  display:block !important;
+  color:var(--mt-white) !important;
+  font-size:18px !important;
+  line-height:1.15 !important;
+  letter-spacing:.5px !important;
+}
+
+.header .brand small{
+  display:block !important;
+  margin-top:5px !important;
+  color:var(--mt-gold) !important;
+  font-size:10px !important;
+  line-height:1.2 !important;
+  letter-spacing:1.4px !important;
+  text-transform:uppercase !important;
+}
+
+.header nav{
+  display:flex !important;
+  align-items:center !important;
+  gap:20px !important;
+}
+
+.header nav a{
+  color:#e9eee9 !important;
+  font-size:14px !important;
+  font-weight:600 !important;
+  text-decoration:none !important;
+  transition:.25s ease !important;
+}
+
+.header nav a:hover{
+  color:var(--mt-gold-light) !important;
+}
+
+.header .nav-cta{
+  border:1px solid rgba(216,182,90,.55) !important;
+  border-radius:999px !important;
+  padding:10px 16px !important;
+  color:var(--mt-gold-light) !important;
+  background:rgba(216,182,90,.06) !important;
+  font-weight:700 !important;
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 80% 25%,rgba(216,182,90,.13),transparent 25%),
+    radial-gradient(circle at 15% 80%,rgba(19,116,83,.18),transparent 30%),
+    linear-gradient(145deg,#061f18,#09291f 55%,#061c16) !important;
+  border-bottom:1px solid rgba(216,182,90,.12);
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,transparent 49.5%,rgba(216,182,90,.035) 50%,transparent 50.5%);
+  opacity:.6;
+}
+
+.hero h1{
+  font-size:clamp(44px,7vw,82px) !important;
+  line-height:.98 !important;
+  letter-spacing:-3px !important;
+  font-weight:850 !important;
+  max-width:850px;
+}
+
+.hero h1 strong,
+.hero h1 span{
+  color:var(--mt-gold-light) !important;
+}
+
+.hero p{
+  max-width:720px !important;
+  color:#d0d9d4 !important;
+  font-size:clamp(17px,2vw,21px) !important;
+  line-height:1.75 !important;
+}
+
+/* ---------- PREMIUM CARDS ---------- */
+
+.card,
+.program-card,
+.event-card,
+.prayer-card,
+.video-card,
+.scholar-card,
+.imam-card{
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025)) !important;
+  border:1px solid rgba(216,182,90,.14) !important;
+  border-radius:22px !important;
+  box-shadow:var(--mt-shadow) !important;
+  backdrop-filter:blur(12px);
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
+}
+
+.card:hover,
+.program-card:hover,
+.event-card:hover,
+.prayer-card:hover,
+.video-card:hover,
+.scholar-card:hover,
+.imam-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(216,182,90,.38) !important;
+  box-shadow:0 25px 70px rgba(0,0,0,.35) !important;
+}
+
+/* ---------- SECTION HEADINGS ---------- */
+
+section h2{
+  color:var(--mt-white) !important;
+  font-size:clamp(30px,4vw,48px) !important;
+  letter-spacing:-1.5px !important;
+  font-weight:800 !important;
+}
+
+section h2::after{
+  content:"";
+  display:block;
+  width:52px;
+  height:3px;
+  margin-top:13px;
+  border-radius:20px;
+  background:linear-gradient(90deg,var(--mt-gold),transparent);
+}
+
+/* ---------- GOLD LABELS ---------- */
+
+.eyebrow,
+.section-label,
+.kicker{
+  color:var(--mt-gold-light) !important;
+  letter-spacing:3px !important;
+  text-transform:uppercase !important;
+  font-size:12px !important;
+  font-weight:800 !important;
+}
+
+/* ---------- PRAYER TIMES ---------- */
+
+.prayer-grid,
+.prayer-times{
+  display:grid !important;
+  grid-template-columns:repeat(5,1fr);
+  gap:14px !important;
+}
+
+.prayer-card{
+  padding:24px 18px !important;
+  text-align:center;
+}
+
+.prayer-card .name{
+  color:var(--mt-muted) !important;
+  font-size:13px !important;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+}
+
+.prayer-card .time{
+  color:var(--mt-gold-light) !important;
+  font-size:25px !important;
+  font-weight:800 !important;
+  margin-top:8px;
+}
+
+/* ---------- PROGRAM / JUMUAH ---------- */
+
+.program-card,
+.event-card{
+  padding:28px !important;
+}
+
+.program-card h3,
+.event-card h3{
+  color:var(--mt-white) !important;
+  font-size:25px !important;
+  line-height:1.2;
+}
+
+.program-card p,
+.event-card p{
+  color:var(--mt-muted) !important;
+  line-height:1.7 !important;
+}
+
+/* ---------- COUNTDOWN ---------- */
+
+.timer{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:12px !important;
+}
+
+.timer span{
+  min-width:82px;
+  padding:16px 12px !important;
+  border-radius:16px !important;
+  border:1px solid rgba(216,182,90,.18) !important;
+  background:rgba(0,0,0,.16) !important;
+  text-align:center;
+}
+
+.timer strong,
+.timer b{
+  color:var(--mt-gold-light) !important;
+  font-size:30px !important;
+}
+
+/* ---------- BUTTONS ---------- */
+
+button,
+.btn,
+a.button,
+.cta{
+  border-radius:999px !important;
+  font-weight:700 !important;
+  transition:.25s ease !important;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover,
+.cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 30px rgba(216,182,90,.15);
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+  transition:.25s ease;
+}
+
+a:hover{
+  color:var(--mt-gold-light) !important;
+}
+
+/* ---------- VIDEO ---------- */
+
+.video-card{
+  overflow:hidden;
+}
+
+.video-card img{
+  aspect-ratio:16/9;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+
+.video-card:hover img{
+  transform:scale(1.04);
+}
+
+/* ---------- CONTACT ---------- */
+
+.contact-card,
+.contact-section{
+  background:
+    radial-gradient(circle at 90% 10%,rgba(216,182,90,.10),transparent 30%),
+    linear-gradient(145deg,#092c22,#061f18) !important;
+  border:1px solid var(--mt-line) !important;
+  border-radius:26px !important;
+  box-shadow:var(--mt-shadow) !important;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+  background:#03150f !important;
+  border-top:1px solid var(--mt-line) !important;
+  color:var(--mt-muted) !important;
+}
+
+/* =========================================================
+   MOBILE — PROFESSIONAL DIGITAL LAYOUT
+   ========================================================= */
+
+@media (max-width:760px){
+
+  .topbar{
+    font-size:10px !important;
+    line-height:1.5 !important;
+  }
+
+  .header .nav{
+    min-height:72px !important;
+    gap:8px !important;
+  }
+
+  .header .brand{
+    gap:9px !important;
+  }
+
+  .header .brand-mark{
+    width:38px !important;
+    height:38px !important;
+    min-width:38px !important;
+    border-radius:10px !important;
+    font-size:12px !important;
+  }
+
+  .header .brand b{
+    font-size:15px !important;
+    line-height:1.15 !important;
+  }
+
+  .header .brand small{
+    font-size:8.5px !important;
+    letter-spacing:.9px !important;
+    margin-top:3px !important;
+  }
+
+  .header nav{
+    gap:0 !important;
+  }
+
+  .header .nav-cta{
+    display:none !important;
+  }
+
+  .header .menu{
+    width:46px !important;
+    height:44px !important;
+    border-radius:11px !important;
+    background:var(--mt-white) !important;
+    color:var(--mt-green) !important;
+    border:0 !important;
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+  }
+
+  .hero h1{
+    font-size:46px !important;
+    letter-spacing:-2px !important;
+    line-height:1 !important;
+  }
+
+  .hero p{
+    font-size:16px !important;
+    line-height:1.65 !important;
+  }
+
+  .prayer-grid,
+  .prayer-times{
+    grid-template-columns:repeat(2,1fr) !important;
+    gap:10px !important;
+  }
+
+  .prayer-card{
+    padding:18px 12px !important;
+    border-radius:17px !important;
+  }
+
+  .prayer-card .time{
+    font-size:21px !important;
+  }
+
+  .timer{
+    gap:8px !important;
+  }
+
+  .timer span{
+    min-width:68px !important;
+    padding:12px 8px !important;
+  }
+
+  .timer strong,
+  .timer b{
+    font-size:24px !important;
+  }
+
+  .card,
+  .program-card,
+  .event-card,
+  .video-card,
+  .scholar-card,
+  .imam-card{
+    border-radius:18px !important;
+  }
+
+  section h2{
+    font-size:31px !important;
+  }
+}
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width:420px){
+
+  .header .brand b{
+    font-size:14px !important;
+  }
+
+  .header .brand small{
+    font-size:8px !important;
+  }
+
+  .hero h1{
+    font-size:40px !important;
+  }
+
+  .prayer-grid,
+  .prayer-times{
+    grid-template-columns:1fr 1fr !important;
+  }
+  }
