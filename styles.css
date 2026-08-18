@@ -2084,3 +2084,43 @@ footer{
     font-size:12px;
   }
   }
+/* MODERN GOLD DATE & TIME */
+.date-box{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  color:#d8b45a;
+  font-family:Inter,Arial,sans-serif;
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:.5px;
+}
+
+.date-icon{
+  color:#e2bd62;
+  font-size:16px;
+}
+
+#today{
+  color:#f0d487;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:.7px;
+  text-shadow:0 0 8px rgba(216,180,90,.25);
+}
+
+.date-separator{
+  color:rgba(216,180,90,.45);
+  margin:0 2px;
+}
+
+.time-icon{
+  color:#d8b45a;
+}
+
+#time{
+  color:#f0d487;
+  font-size:14px;
+  font-weight:600;
+}
