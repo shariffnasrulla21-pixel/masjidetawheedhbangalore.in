@@ -1475,3 +1475,612 @@ button,
 /* FOOTER */
 footer{
   background:#021
+}
+
+/* =====================================================
+   PROFESSIONAL MASJID-E-TAWHEED DESIGN
+   Clean • Modern • Mobile First
+   ===================================================== */
+
+:root{
+  --green:#061f18;
+  --green-2:#082a21;
+  --green-3:#0d3429;
+  --gold:#d8b45b;
+  --gold-light:#f0d58a;
+  --white:#f8f7f2;
+  --muted:#b9c4be;
+  --border:rgba(216,180,91,.22);
+}
+
+/* BASE */
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  background:var(--green) !important;
+  color:var(--white);
+  font-family:Inter,Arial,sans-serif;
+  line-height:1.6;
+}
+
+.wrap{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* TOP BAR */
+.topbar{
+  background:#041812 !important;
+  border-bottom:1px solid var(--border);
+  font-size:12px;
+  color:var(--gold-light);
+}
+
+.topbar-inner{
+  min-height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+
+/* HEADER */
+.header{
+  background:rgba(6,31,24,.97) !important;
+  border-bottom:1px solid var(--border);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  backdrop-filter:blur(12px);
+}
+
+.nav{
+  min-height:76px;
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+/* BRAND */
+.brand{
+  display:flex !important;
+  align-items:center;
+  gap:12px;
+  text-decoration:none !important;
+  color:var(--white) !important;
+  min-width:0;
+}
+
+.brand-mark{
+  width:48px !important;
+  height:48px !important;
+  border-radius:14px !important;
+  display:flex !important;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,var(--gold),var(--gold-light));
+  color:var(--green) !important;
+  font-weight:900;
+  font-size:17px;
+  flex-shrink:0;
+  box-shadow:0 6px 20px rgba(216,180,91,.18);
+}
+
+.brand-text{
+  display:flex;
+  flex-direction:column;
+  line-height:1.15;
+}
+
+.brand-text b{
+  font-size:17px;
+  letter-spacing:.2px;
+}
+
+.brand-text small{
+  color:var(--gold-light);
+  font-size:11px;
+  margin-top:3px;
+}
+
+.brand-text em{
+  display:none;
+}
+
+/* NAV */
+nav{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+nav a{
+  color:#e8ece8 !important;
+  text-decoration:none !important;
+  padding:10px 12px;
+  border-radius:9px;
+  font-size:14px;
+  transition:.2s ease;
+}
+
+nav a:hover{
+  color:var(--gold-light) !important;
+  background:rgba(216,180,91,.08);
+}
+
+.nav-cta{
+  background:var(--gold) !important;
+  color:var(--green) !important;
+  font-weight:800;
+  padding:11px 17px !important;
+  border-radius:10px !important;
+  margin-left:8px;
+}
+
+.nav-cta:hover{
+  background:var(--gold-light) !important;
+}
+
+/* MENU BUTTON */
+.menu{
+  display:none;
+  margin-left:auto;
+  width:44px;
+  height:44px;
+  border:1px solid var(--border);
+  border-radius:10px;
+  background:transparent;
+  color:var(--white);
+  font-size:22px;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  padding:90px 0 75px !important;
+  background:
+    radial-gradient(circle at 85% 25%,rgba(216,180,91,.10),transparent 32%),
+    linear-gradient(180deg,#06241c 0%,#061f18 100%);
+}
+
+.hero-glow{
+  display:none !important;
+}
+
+.hero-grid{
+  display:grid !important;
+  grid-template-columns:1.25fr .75fr;
+  gap:55px;
+  align-items:center;
+}
+
+.hero-copy{
+  max-width:720px;
+}
+
+.eyebrow{
+  color:var(--gold-light) !important;
+  font-size:12px !important;
+  font-weight:800;
+  letter-spacing:2.5px;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:clamp(42px,6vw,72px) !important;
+  line-height:1.02 !important;
+  letter-spacing:-2px;
+  margin:0 0 22px;
+  color:var(--white) !important;
+}
+
+.hero h1 span{
+  color:var(--gold-light) !important;
+}
+
+.hero .lead{
+  max-width:620px;
+  color:#c8d0cb;
+  font-size:18px;
+  line-height:1.75;
+  margin-bottom:30px;
+}
+
+/* BUTTONS */
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:24px;
+}
+
+.btn,
+button{
+  font-family:inherit;
+}
+
+.btn{
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  min-height:46px;
+  padding:0 20px !important;
+  border-radius:10px !important;
+  text-decoration:none !important;
+  font-size:14px;
+  font-weight:800;
+  transition:.2s ease;
+}
+
+.btn-gold{
+  background:var(--gold) !important;
+  color:var(--green) !important;
+}
+
+.btn-gold:hover{
+  background:var(--gold-light) !important;
+  transform:translateY(-1px);
+}
+
+.btn-glass,
+.dark-btn{
+  background:rgba(255,255,255,.04) !important;
+  color:var(--white) !important;
+  border:1px solid var(--border);
+}
+
+.btn-glass:hover,
+.dark-btn:hover{
+  border-color:var(--gold);
+  color:var(--gold-light) !important;
+}
+
+/* QUICK LINKS */
+.quick-links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-top:25px;
+}
+
+.quick-links a{
+  color:#cfd8d2 !important;
+  font-size:13px;
+  text-decoration:none !important;
+  border-bottom:1px solid rgba(216,180,91,.35);
+  padding-bottom:3px;
+}
+
+/* HERO CARD */
+.hero-card{
+  background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.02)) !important;
+  border:1px solid var(--border) !important;
+  border-radius:20px !important;
+  padding:28px !important;
+  box-shadow:0 20px 50px rgba(0,0,0,.22);
+}
+
+.card-label{
+  color:var(--gold-light) !important;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.7px;
+}
+
+.hero-date{
+  font-size:25px;
+  font-weight:800;
+  margin:14px 0 8px;
+}
+
+.hero-time{
+  color:var(--gold-light);
+  font-weight:700;
+}
+
+.hero-card p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 0 !important;
+}
+
+.dark-section{
+  background:#061b15 !important;
+}
+
+.cream-section{
+  background:#f5f1e7 !important;
+  color:#13241e !important;
+}
+
+.section-head{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:25px;
+  margin-bottom:35px;
+}
+
+.section-head h2{
+  margin:4px 0 0;
+  font-size:32px !important;
+  line-height:1.15;
+}
+
+.section-head p{
+  max-width:600px;
+  color:var(--muted);
+}
+
+/* PRAYER */
+.prayer-section{
+  background:#f5f1e7 !important;
+  color:#12231d !important;
+}
+
+.prayer-section .eyebrow{
+  color:#8f7027 !important;
+}
+
+.date-box{
+  color:#6d756f;
+  font-size:13px;
+}
+
+.prayer-grid,
+.prayer-times{
+  display:grid !important;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+}
+
+.prayer-grid > *,
+.prayer-times > *{
+  background:#fff !important;
+  border:1px solid #e4dfd2;
+  border-radius:14px;
+  padding:18px !important;
+  text-align:center;
+  box-shadow:0 6px 20px rgba(0,0,0,.04);
+}
+
+/* KHUTBAH / CARDS */
+.event-grid,
+.program-grid,
+.scholar-grid{
+  display:grid !important;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.event-grid > *,
+.program-grid article,
+.scholar-grid > *{
+  background:rgba(255,255,255,.035);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:22px;
+  transition:.2s ease;
+}
+
+.event-grid > *:hover,
+.program-grid article:hover,
+.scholar-grid > *:hover{
+  transform:translateY(-3px);
+  border-color:rgba(216,180,91,.5);
+}
+
+/* MEDIA */
+.video-stage{
+  border-radius:18px !important;
+  overflow:hidden;
+  border:1px solid var(--border);
+}
+
+/* CONTACT */
+.contact-section{
+  background:#f5f1e7 !important;
+  color:#13241e !important;
+}
+
+.contact-grid{
+  display:grid !important;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.contact-card,
+.contact{
+  border-radius:16px !important;
+}
+
+.contact-card{
+  background:#fff;
+  border:1px solid #e3ddd0;
+  padding:25px;
+}
+
+/* FOOTER */
+footer{
+  background:#03130f !important;
+  border-top:1px solid var(--border);
+  color:#9ca9a3;
+  padding:30px 0;
+}
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media(max-width:900px){
+
+  .nav{
+    min-height:68px;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:68px;
+    left:0;
+    right:0;
+    padding:12px 5%;
+    background:#061f18;
+    border-bottom:1px solid var(--border);
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  nav a{
+    padding:13px 14px;
+  }
+
+  .menu{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .nav-cta{
+    display:none !important;
+  }
+
+  .hero{
+    padding:60px 0 55px !important;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .hero h1{
+    font-size:48px !important;
+  }
+
+  .prayer-grid,
+  .prayer-times{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .event-grid,
+  .program-grid,
+  .scholar-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:600px){
+
+  .topbar{
+    font-size:10px;
+  }
+
+  .topbar-inner{
+    min-height:34px;
+  }
+
+  .brand-mark{
+    width:42px !important;
+    height:42px !important;
+  }
+
+  .brand-text b{
+    font-size:15px;
+  }
+
+  .brand-text small{
+    font-size:10px;
+  }
+
+  .hero{
+    padding:48px 0 45px !important;
+  }
+
+  .hero h1{
+    font-size:40px !important;
+    letter-spacing:-1.3px;
+  }
+
+  .hero .lead{
+    font-size:16px;
+    line-height:1.6;
+  }
+
+  .actions{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .quick-links{
+    gap:12px;
+  }
+
+  .hero-card{
+    padding:21px !important;
+  }
+
+  .section{
+    padding:55px 0 !important;
+  }
+
+  .section-head{
+    display:block;
+    margin-bottom:25px;
+  }
+
+  .section-head h2{
+    font-size:27px !important;
+  }
+
+  .prayer-grid,
+  .prayer-times,
+  .event-grid,
+  .program-grid,
+  .scholar-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:420px){
+
+  .brand-text b{
+    font-size:14px !important;
+  }
+
+  .brand-text small{
+    font-size:9px !important;
+  }
+
+  .hero h1{
+    font-size:36px !important;
+  }
+
+  .hero .lead{
+    font-size:15px;
+  }
+
+  .quick-links a{
+    font-size:12px;
+  }
+  }
