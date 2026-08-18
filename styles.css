@@ -1091,3 +1091,387 @@ footer{
     grid-template-columns:1fr 1fr !important;
   }
   }
+/* =========================================================
+   MASJID-E-TAWHEED — PREMIUM DIGITAL 2026/27 UI
+   FINAL FRONT-END POLISH
+   ========================================================= */
+
+:root{
+  --deep:#031d17;
+  --deep2:#062b22;
+  --panel:#0a3329;
+  --gold:#d8b45b;
+  --gold2:#f0d58a;
+  --cream:#f7f3e8;
+  --muted:#c9d2cc;
+  --line:rgba(216,180,91,.20);
+  --shadow:0 20px 60px rgba(0,0,0,.28);
+}
+
+/* GLOBAL */
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(216,180,91,.08),transparent 32%),
+    linear-gradient(180deg,#031d17 0%,#05251e 45%,#031a15 100%);
+  color:var(--cream);
+  letter-spacing:.01em;
+}
+
+.wrap{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* TOP BAR */
+.topbar{
+  background:rgba(2,25,19,.94)!important;
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line)!important;
+  min-height:38px;
+}
+
+.topbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:8px 0;
+}
+
+/* MAIN HEADER */
+.header{
+  background:rgba(3,29,23,.96)!important;
+  border-bottom:1px solid rgba(216,180,91,.12);
+  box-shadow:0 10px 35px rgba(0,0,0,.18);
+  position:sticky;
+  top:0;
+  z-index:1000;
+  backdrop-filter:blur(18px);
+}
+
+.header .nav{
+  min-height:82px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+/* BRAND */
+.header .brand{
+  display:flex!important;
+  align-items:center!important;
+  gap:13px!important;
+  text-decoration:none!important;
+  min-width:0;
+}
+
+.header .brand-mark{
+  width:46px!important;
+  height:46px!important;
+  flex:0 0 46px;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  border:1px solid rgba(216,180,91,.55);
+  border-radius:14px;
+  background:linear-gradient(145deg,#123e31,#061f18);
+  color:var(--gold2)!important;
+  font-size:14px!important;
+  font-weight:900!important;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.header .brand b{
+  display:block!important;
+  color:#fff!important;
+  font-size:20px!important;
+  line-height:1.05!important;
+  letter-spacing:-.02em;
+  white-space:nowrap!important;
+}
+
+.header .brand small{
+  display:block!important;
+  margin-top:5px!important;
+  color:var(--gold2)!important;
+  font-size:10px!important;
+  font-weight:600!important;
+  letter-spacing:.16em!important;
+  line-height:1.2!important;
+  white-space:nowrap!important;
+}
+
+/* NAVIGATION */
+.header nav{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:22px;
+}
+
+.header nav a{
+  color:#edf1ec!important;
+  text-decoration:none!important;
+  font-size:14px!important;
+  font-weight:650!important;
+  transition:.25s ease;
+  position:relative;
+}
+
+.header nav a:hover{
+  color:var(--gold2)!important;
+}
+
+.header nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-7px;
+  width:0;
+  height:2px;
+  background:var(--gold);
+  transition:.25s ease;
+}
+
+.header nav a:hover::after{
+  width:100%;
+}
+
+/* CTA */
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold2),var(--gold))!important;
+  color:#10251d!important;
+  border:0!important;
+  border-radius:12px!important;
+  padding:12px 18px!important;
+  font-weight:800!important;
+  text-decoration:none!important;
+  box-shadow:0 8px 25px rgba(216,180,91,.18);
+}
+
+/* MOBILE MENU BUTTON */
+.menu{
+  border:1px solid rgba(216,180,91,.35)!important;
+  background:#0b3027!important;
+  color:#fff!important;
+  border-radius:12px!important;
+  min-width:48px;
+  min-height:48px;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 85% 20%,rgba(216,180,91,.14),transparent 28%),
+    radial-gradient(circle at 10% 80%,rgba(40,120,90,.13),transparent 30%),
+    linear-gradient(135deg,#03231b,#062d24 55%,#031c16);
+  border-bottom:1px solid rgba(216,180,91,.12);
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:55px 55px;
+  mask-image:linear-gradient(to bottom,black,transparent);
+  pointer-events:none;
+}
+
+.hero .wrap{
+  position:relative;
+  z-index:1;
+  padding-top:95px;
+  padding-bottom:95px;
+}
+
+/* SMALL BRAND TITLE */
+.hero .eyebrow,
+.hero .kicker{
+  color:var(--gold2)!important;
+  font-size:12px!important;
+  font-weight:850!important;
+  letter-spacing:.28em!important;
+  text-transform:uppercase;
+}
+
+/* MAIN HEADING */
+.hero h1{
+  max-width:850px;
+  margin:18px 0 25px!important;
+  font-size:clamp(48px,7vw,88px)!important;
+  line-height:.98!important;
+  letter-spacing:-.055em!important;
+  font-weight:850!important;
+  color:#fff!important;
+  text-wrap:balance;
+}
+
+.hero h1 span{
+  color:var(--gold2)!important;
+}
+
+.hero p{
+  max-width:720px;
+  color:#d6dfda!important;
+  font-size:clamp(17px,2vw,21px)!important;
+  line-height:1.75!important;
+}
+
+/* HERO BUTTONS */
+.hero a,
+.hero button{
+  border-radius:13px!important;
+  transition:.25s ease!important;
+}
+
+.hero a:hover,
+.hero button:hover{
+  transform:translateY(-2px);
+}
+
+/* SECTION */
+section{
+  position:relative;
+}
+
+section h2{
+  color:#fff!important;
+  font-weight:800!important;
+  letter-spacing:-.025em;
+}
+
+/* CARDS */
+.card,
+.prayer-card,
+.program-card,
+.khuttbah-card,
+.khutbah-card,
+.imam-card,
+.scholar-card,
+.media-card{
+  background:
+    linear-gradient(145deg,rgba(13,54,43,.95),rgba(5,32,25,.96))!important;
+  border:1px solid rgba(216,180,91,.14)!important;
+  border-radius:20px!important;
+  box-shadow:var(--shadow)!important;
+  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+
+.card:hover,
+.prayer-card:hover,
+.program-card:hover,
+.khuttbah-card:hover,
+.khutbah-card:hover,
+.imam-card:hover,
+.scholar-card:hover,
+.media-card:hover{
+  transform:translateY(-5px);
+  border-color:rgba(216,180,91,.35)!important;
+  box-shadow:0 25px 70px rgba(0,0,0,.34)!important;
+}
+
+/* PRAYER */
+.prayer-grid,
+.prayer-times{
+  gap:16px!important;
+}
+
+.prayer-grid > *,
+.prayer-times > *{
+  border-radius:18px!important;
+  padding:22px!important;
+}
+
+/* GOLD NUMBERS / TIMES */
+.time,
+.prayer-time,
+.time-value{
+  color:var(--gold2)!important;
+  font-weight:850!important;
+}
+
+/* LINKS */
+a{
+  transition:.25s ease;
+}
+
+a:hover{
+  color:var(--gold2)!important;
+}
+
+/* PROGRAM AREA */
+.programs,
+.program-grid{
+  gap:20px!important;
+}
+
+.program-card h3,
+.program-card h2{
+  color:#fff!important;
+}
+
+.program-card small,
+.program-card .meta{
+  color:var(--gold2)!important;
+}
+
+/* BUTTONS */
+button,
+.btn,
+.cta,
+.nav-cta{
+  cursor:pointer;
+}
+
+.btn,
+.cta{
+  border-radius:12px!important;
+  font-weight:750!important;
+}
+
+/* COUNTDOWN */
+.timer{
+  display:flex!important;
+  flex-wrap:wrap;
+  gap:12px!important;
+  align-items:stretch!important;
+}
+
+.timer span{
+  display:flex!important;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  min-width:82px;
+  min-height:74px;
+  padding:12px 14px;
+  border:1px solid rgba(216,180,91,.18);
+  border-radius:16px;
+  background:rgba(255,255,255,.035);
+}
+
+/* YOUTUBE */
+.youtube-btn{
+  border-radius:12px!important;
+  box-shadow:0 8px 25px rgba(0,0,0,.2);
+}
+
+/* CONTACT */
+.contact-card,
+.contact{
+  border-radius:22px!important;
+}
+
+/* FOOTER */
+footer{
+  background:#021
