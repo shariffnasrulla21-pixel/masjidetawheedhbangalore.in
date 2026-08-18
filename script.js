@@ -340,6 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
  renderScholars();
   renderVideo();
   countdown();
+ updateClock();
   setupNavigation();
   setupMenu();
 
@@ -356,7 +357,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(nextVideo, 7000);
   setInterval(nextImam, 8000);
   setInterval(countdown, 1000);
-
+  setInterval(updateClock, 1000);
   document.documentElement.classList.add("js-ready");
 
   console.log("Masjid-e-Tawheed website system loaded successfully.");
