@@ -569,3 +569,16 @@ grid-template-columns:1fr
   background:#cc0000;
   color:#fff;
 }
+.timer{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  align-items:center;
+}
+
+.timer span{
+  display:inline-flex;
+  align-items:baseline;
+  gap:5px;
+  white-space:nowrap;
+}
