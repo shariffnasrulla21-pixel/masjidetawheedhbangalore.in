@@ -249,7 +249,8 @@ function nextVideo() {
 }
 
 function countdown() {
-  const target = new Date(NEXT_PROGRAM.date).getTime();
+  
+  const target = new Date(NEXT_PROGRAM.date);
   const diff = Math.max(0, target - Date.now());
 
   const days = Math.floor(diff / 86400000);
@@ -263,7 +264,23 @@ function countdown() {
   setText("secs", String(secs).padStart(2, "0"));
   setText("countTitle", NEXT_PROGRAM.title);
   setText("countText", NEXT_PROGRAM.text);
+  }
+
+function updateClock() {
+  const clock = document.getElementById("liveClock");
+  if (!clock) return;
+
+const now = new Date();
+
+clock.textContent = now.toLocaleTimeString("en-IN", {
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+  hour12: true
+});
 }
+
+
 
 function updateDates() {
   const now = new Date();
