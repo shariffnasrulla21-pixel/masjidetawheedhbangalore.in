@@ -2124,3 +2124,426 @@ footer{
   font-size:14px;
   font-weight:600;
 }
+/* =========================================================
+   MASJID-E-TAWHEED — PREMIUM DIGITAL HD DESIGN
+   ========================================================= */
+
+:root{
+  --lux-green:#031f18;
+  --lux-green-2:#062d24;
+  --lux-green-3:#0b3b2f;
+  --gold:#d8b45a;
+  --gold-light:#f3d98a;
+  --white:#ffffff;
+  --muted:#b9c8c2;
+  --glass:rgba(255,255,255,.055);
+  --glass-border:rgba(216,180,90,.24);
+  --shadow:0 20px 60px rgba(0,0,0,.38);
+}
+
+/* GLOBAL */
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:
+    radial-gradient(circle at 15% 10%,rgba(216,180,90,.10),transparent 30%),
+    radial-gradient(circle at 85% 25%,rgba(25,120,90,.13),transparent 35%),
+    linear-gradient(135deg,#021711,#06251e 50%,#031812);
+  color:var(--white);
+  font-family:Inter,Arial,sans-serif;
+}
+
+::selection{
+  background:var(--gold);
+  color:var(--lux-green);
+}
+
+/* TOP BAR */
+.topbar{
+  background:rgba(2,20,15,.82)!important;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--glass-border)!important;
+}
+
+/* HEADER */
+.header{
+  background:rgba(3,31,24,.78)!important;
+  backdrop-filter:blur(22px);
+  border-bottom:1px solid rgba(216,180,90,.18)!important;
+  box-shadow:0 10px 35px rgba(0,0,0,.25);
+}
+
+/* BRAND */
+.brand{
+  transition:.3s ease;
+}
+
+.brand-mark{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold))!important;
+  color:var(--lux-green)!important;
+  box-shadow:
+    0 0 0 1px rgba(243,217,138,.35),
+    0 10px 35px rgba(216,180,90,.20)!important;
+}
+
+.brand-text b{
+  color:#fff!important;
+  letter-spacing:.4px;
+}
+
+.brand-text small{
+  color:var(--gold-light)!important;
+}
+
+/* NAVIGATION */
+.nav-links a,
+nav a{
+  border-radius:12px!important;
+  transition:.25s ease!important;
+}
+
+.nav-links a:hover,
+nav a:hover{
+  color:var(--gold-light)!important;
+  background:rgba(216,180,90,.09)!important;
+  transform:translateY(-2px);
+}
+
+/* CONTACT CTA */
+.nav-cta{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold))!important;
+  color:#062019!important;
+  border:0!important;
+  box-shadow:0 8px 25px rgba(216,180,90,.22);
+}
+
+.nav-cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 35px rgba(216,180,90,.32);
+}
+
+/* MOBILE MENU */
+.menu{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold))!important;
+  color:var(--lux-green)!important;
+  border:0!important;
+  box-shadow:0 8px 25px rgba(216,180,90,.22);
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 75% 25%,rgba(216,180,90,.16),transparent 30%),
+    radial-gradient(circle at 15% 80%,rgba(30,120,90,.18),transparent 35%),
+    linear-gradient(135deg,#021711,#062d24 55%,#031b15)!important;
+}
+
+/* HERO LIGHT */
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,transparent,rgba(255,255,255,.035),transparent);
+  opacity:.8;
+}
+
+/* HERO CONTENT */
+.hero-copy{
+  position:relative;
+  z-index:2;
+}
+
+.eyebrow{
+  color:var(--gold-light)!important;
+  font-weight:800!important;
+  letter-spacing:3px!important;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  color:#fff!important;
+  font-weight:900!important;
+  letter-spacing:-1.5px;
+  text-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+.hero h1 span{
+  color:var(--gold-light)!important;
+  text-shadow:0 0 30px rgba(216,180,90,.18);
+}
+
+.hero-location{
+  color:var(--gold-light)!important;
+  font-weight:600;
+}
+
+.hero .lead{
+  color:#d6e0dc!important;
+}
+
+/* HERO BUTTONS */
+.hero-buttons,
+.hero-buttons a{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.btn,
+button,
+.hero a{
+  position:relative;
+  overflow:hidden;
+  border-radius:14px!important;
+  transition:.28s ease!important;
+}
+
+.btn-gold{
+  background:linear-gradient(135deg,var(--gold-light),var(--gold))!important;
+  color:#062019!important;
+  border:0!important;
+  font-weight:800!important;
+  box-shadow:0 12px 30px rgba(216,180,90,.20);
+}
+
+.btn-gold:hover{
+  transform:translateY(-4px);
+  box-shadow:0 18px 40px rgba(216,180,90,.32);
+}
+
+.btn-glass,
+.btn-black,
+.dark-btn{
+  background:rgba(255,255,255,.055)!important;
+  color:#fff!important;
+  border:1px solid rgba(216,180,90,.24)!important;
+  backdrop-filter:blur(14px);
+}
+
+.btn-glass:hover,
+.btn-black:hover,
+.dark-btn:hover{
+  background:rgba(216,180,90,.12)!important;
+  border-color:var(--gold)!important;
+  color:var(--gold-light)!important;
+  transform:translateY(-4px);
+}
+
+/* HERO CARD */
+.hero-card{
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025))!important;
+  border:1px solid rgba(216,180,90,.28)!important;
+  border-radius:26px!important;
+  box-shadow:var(--shadow)!important;
+  backdrop-filter:blur(22px);
+  transition:.35s ease;
+}
+
+.hero-card:hover{
+  transform:translateY(-7px);
+  border-color:rgba(243,217,138,.55)!important;
+  box-shadow:0 28px 80px rgba(0,0,0,.48)!important;
+}
+
+.card-label{
+  color:var(--gold-light)!important;
+}
+
+/* SECTIONS */
+.section{
+  position:relative;
+  padding:90px 0!important;
+}
+
+.section-dark,
+.dark-section{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(216,180,90,.06),transparent 35%),
+    linear-gradient(180deg,#031f18,#041b16)!important;
+}
+
+.cream-section{
+  background:#f7f4eb!important;
+  color:#12241e!important;
+}
+
+/* SECTION HEADINGS */
+.section-head h2{
+  color:#fff!important;
+  font-weight:900!important;
+  letter-spacing:-.5px;
+}
+
+.cream-section .section-head h2{
+  color:#10251d!important;
+}
+
+.section-head p{
+  color:var(--muted)!important;
+}
+
+/* CARDS */
+.prayer-grid > *,
+.prayer-times > *,
+.event-grid > *,
+.program-grid > *,
+.scholar-grid > *,
+.contact-grid > *{
+  border:1px solid var(--glass-border)!important;
+  border-radius:20px!important;
+  background:
+    linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025))!important;
+  box-shadow:0 15px 45px rgba(0,0,0,.20);
+  backdrop-filter:blur(14px);
+  transition:.3s ease!important;
+}
+
+.prayer-grid > *:hover,
+.prayer-times > *:hover,
+.event-grid > *:hover,
+.program-grid > *:hover,
+.scholar-grid > *:hover,
+.contact-grid > *:hover{
+  transform:translateY(-7px);
+  border-color:rgba(216,180,90,.48)!important;
+  box-shadow:0 25px 60px rgba(0,0,0,.32);
+}
+
+/* GOLD NUMBERS / TIMES */
+.time,
+.prayer-time,
+.time-value{
+  color:var(--gold-light)!important;
+  font-weight:900!important;
+}
+
+/* YOUTUBE */
+.youtube-btn{
+  background:linear-gradient(135deg,#b89032,#e2c46d)!important;
+  color:#062019!important;
+  border:0!important;
+  font-weight:800;
+  box-shadow:0 12px 30px rgba(216,180,90,.22);
+}
+
+/* MEDIA */
+.video-stage,
+.video-art{
+  border-radius:22px!important;
+  border:1px solid var(--glass-border)!important;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+
+/* CONTACT */
+.contact-section{
+  background:
+    radial-gradient(circle at 80% 20%,rgba(216,180,90,.10),transparent 30%),
+    linear-gradient(135deg,#061f18,#031711)!important;
+}
+
+.contact-card{
+  background:rgba(255,255,255,.055)!important;
+  border:1px solid var(--glass-border)!important;
+  border-radius:22px!important;
+  box-shadow:var(--shadow);
+}
+
+/* FOOTER */
+footer{
+  background:#020f0b!important;
+  border-top:1px solid rgba(216,180,90,.20)!important;
+  color:#b8c8c1;
+}
+
+/* MOBILE PREMIUM */
+@media(max-width:900px){
+
+  .hero{
+    min-height:650px;
+    padding:70px 0 60px!important;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr!important;
+    gap:35px!important;
+  }
+
+  .hero h1{
+    font-size:clamp(40px,10vw,62px)!important;
+    line-height:1.05!important;
+  }
+
+  .hero-card{
+    margin-top:10px;
+  }
+
+  .section{
+    padding:65px 0!important;
+  }
+
+  .nav-cta{
+    display:none!important;
+  }
+}
+
+@media(max-width:600px){
+
+  .wrap{
+    width:min(94%,1180px)!important;
+  }
+
+  .hero{
+    padding:55px 0 45px!important;
+  }
+
+  .hero h1{
+    font-size:42px!important;
+  }
+
+  .hero-buttons,
+  .hero-buttons a{
+    width:100%;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  .hero-card{
+    border-radius:20px!important;
+  }
+
+  .section{
+    padding:55px 0!important;
+  }
+
+  .section-head h2{
+    font-size:30px!important;
+  }
+}
+
+/* PREMIUM SCROLLBAR */
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#02130f;
+}
+
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(var(--gold-light),var(--gold));
+  border-radius:20px;
+}
