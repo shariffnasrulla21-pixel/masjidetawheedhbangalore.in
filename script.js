@@ -14,7 +14,10 @@ const KHUTBAHS = [
     date: "Friday, 21st August 2026",
     topic: "",
     speaker: "Shaikh Abdurrab Faizi Hafizahullah",
-    time: "12:45 PM"
+    time: "12:45 PM",
+    ladies: "Separate Arrangement for Ladies",
+    mobile: "7795736080 / 9900164166",
+    youtube: "Watch YouTube Channel • Subscribe"
 },
   {
     date: "Upcoming Friday",
