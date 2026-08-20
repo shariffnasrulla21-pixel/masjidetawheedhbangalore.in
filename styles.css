@@ -2656,3 +2656,129 @@ footer{
     border-radius:0 0 18px 18px;
   }
 }
+/* ===== PREMIUM MASJID NAVIGATION V2 ===== */
+
+@media (max-width:768px){
+
+  /* Compact opened-menu area */
+  header nav,
+  .header nav{
+    width:100% !important;
+  }
+
+  /* MAIN MENU - ONE STRAIGHT HORIZONTAL ROW */
+  .nav-links{
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+
+    align-items:center !important;
+    justify-content:flex-start !important;
+
+    gap:10px !important;
+
+    width:100% !important;
+    box-sizing:border-box !important;
+
+    padding:12px 16px !important;
+    margin:0 !important;
+
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+
+    white-space:nowrap !important;
+
+    background:#031f18 !important;
+
+    border-top:1px solid rgba(218,181,92,.20) !important;
+    border-bottom:1px solid rgba(218,181,92,.28) !important;
+
+    scrollbar-width:none !important;
+    -webkit-overflow-scrolling:touch !important;
+  }
+
+  .nav-links::-webkit-scrollbar{
+    display:none !important;
+  }
+
+  /* PREMIUM BUTTONS */
+  .nav-links a{
+    flex:0 0 auto !important;
+
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    min-width:auto !important;
+    height:42px !important;
+
+    padding:0 18px !important;
+
+    margin:0 !important;
+
+    border:1px solid rgba(218,181,92,.65) !important;
+    border-radius:999px !important;
+
+    background:linear-gradient(
+      135deg,
+      rgba(218,181,92,.18),
+      rgba(218,181,92,.05)
+    ) !important;
+
+    color:#f7f4ea !important;
+
+    font-size:13px !important;
+    font-weight:700 !important;
+    letter-spacing:.35px !important;
+
+    box-shadow:
+      0 4px 16px rgba(0,0,0,.25),
+      inset 0 1px 0 rgba(255,255,255,.08) !important;
+
+    transition:all .2s ease !important;
+  }
+
+  .nav-links a:hover,
+  .nav-links a:focus{
+    color:#f0cf75 !important;
+
+    border-color:#e0bd62 !important;
+
+    background:linear-gradient(
+      135deg,
+      rgba(218,181,92,.30),
+      rgba(218,181,92,.10)
+    ) !important;
+
+    transform:translateY(-1px);
+  }
+
+  .nav-links a:active{
+    transform:scale(.96) !important;
+  }
+
+  /* REMOVE LARGE EMPTY VERTICAL MENU SPACE */
+  .nav-links{
+    max-height:70px !important;
+  }
+
+  /* HEADER LOGO AREA */
+  .brand-mark{
+    width:58px !important;
+    height:58px !important;
+
+    border-radius:16px !important;
+
+    border:1px solid rgba(218,181,92,.75) !important;
+
+    box-shadow:
+      0 0 18px rgba(218,181,92,.16),
+      inset 0 0 15px rgba(218,181,92,.06) !important;
+  }
+
+  /* PREMIUM MAIN TITLE */
+  .brand-text b,
+  .brand-text strong{
+    letter-spacing:1px !important;
+  }
+}
