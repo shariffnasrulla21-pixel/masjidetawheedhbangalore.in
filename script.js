@@ -10,12 +10,12 @@ const PRAYER_TIMES = [
 ];
 
 const KHUTBAHS = [
-  {
-    date: "Next Friday",
-    topic: "Jumu'ah Khutbah",
-    speaker: "To Be Announced",
+{
+    date: "Friday, 21st August 2026",
+    topic: "",
+    speaker: "Shaikh Abdurrab Faizi Hafizahullah",
     time: "12:45 PM"
-  },
+},
   {
     date: "Upcoming Friday",
     topic: "Islamic Reminder",
