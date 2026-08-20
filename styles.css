@@ -2782,3 +2782,77 @@ footer{
     letter-spacing:1px !important;
   }
 }
+/* ===== COMPACT PREMIUM BUTTON MENU ===== */
+
+@media (max-width:768px){
+
+  header nav{
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
+    justify-content:flex-start !important;
+    align-items:center !important;
+
+    gap:6px !important;
+
+    width:100% !important;
+    height:58px !important;
+
+    padding:8px 10px !important;
+    margin:0 !important;
+
+    overflow-x:auto !important;
+    overflow-y:hidden !important;
+
+    box-sizing:border-box !important;
+
+    background:#031f18 !important;
+
+    scrollbar-width:none !important;
+  }
+
+  header nav::-webkit-scrollbar{
+    display:none !important;
+  }
+
+  header nav a{
+    flex:0 0 auto !important;
+
+    height:34px !important;
+    padding:0 11px !important;
+
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    border:1px solid rgba(218,181,92,.60) !important;
+    border-radius:18px !important;
+
+    background:rgba(218,181,92,.08) !important;
+
+    color:#f7f4ea !important;
+
+    font-size:11px !important;
+    font-weight:700 !important;
+    letter-spacing:.2px !important;
+
+    white-space:nowrap !important;
+    text-decoration:none !important;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.20) !important;
+
+    transition:.2s ease !important;
+  }
+
+  header nav a:hover,
+  header nav a:focus{
+    background:rgba(218,181,92,.20) !important;
+    border-color:#d8b45c !important;
+    color:#f0cf75 !important;
+  }
+
+  header nav a:active{
+    transform:scale(.95) !important;
+  }
+
+                    }
