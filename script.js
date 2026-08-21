@@ -12,7 +12,7 @@ const PRAYER_TIMES = [
 const KHUTBAHS = [
 {
     date: "Friday, 21st August 2026",
-    topic: "",
+    topic: "Takabbur Ki Holnakiyan",
     speaker: "Shaikh Abdurrab Faizi Hafizahullah",
     time: "12:45 PM",
     ladies: "Separate Arrangement for Ladies",
