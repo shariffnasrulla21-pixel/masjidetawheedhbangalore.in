@@ -2854,5 +2854,61 @@ footer{
   header nav a:active{
     transform:scale(.95) !important;
   }
+/* ================================
+   LIVE PROGRAM
+================================ */
 
-                    }
+.live-title {
+  text-align: center;
+  color: #fdf6d5;
+  font-size: clamp(18px, 3vw, 30px);
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.live-title small {
+  display: block;
+  color: #d6d6d6;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+.video-art iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 18px;
+  background: #000;
+  box-shadow: 0 10px 35px rgba(0,0,0,.45);
+}
+
+.video-stage {
+  width: 100%;
+}
+
+.video-art {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #000;
+}
+
+@media (max-width: 600px) {
+  .live-title {
+    font-size: 18px;
+  }
+
+  .live-title small {
+    font-size: 12px;
+  }
+
+  .video-art {
+    border-radius: 12px;
+  }
+}
+                    
