@@ -4,663 +4,551 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="Masjid-e-Tawheed Ahle Hadees, Umar Bagh, JP Nagar, Bangalore. Prayer Times, Jumu'ah Khutbah, Islamic Programs and Media.">
-
 <meta name="theme-color" content="#061812">
+<meta name="description" content="Masjid-e-Tawheed Ahle Hadees, Umar Bagh, JP Nagar, Bangalore">
 
-<title>Masjid-e-Tawheed Ahle Hadees | Umar Bagh, JP Nagar, Bangalore</title>
+<title>Masjid-e-Tawheed Ahle Hadees | Umar Bagh</title>
 
 <link rel="stylesheet" href="styles.css">
+
+<style>
+/* FINAL HOME DESIGN */
+.final-home{
+  min-height:100vh;
+}
+
+.final-header{
+  text-align:center;
+  padding:35px 20px 25px;
+}
+
+.final-logo{
+  width:170px;
+  height:170px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 15px;
+}
+
+.final-title{
+  font-family:Georgia,serif;
+  font-size:clamp(30px,5vw,58px);
+  letter-spacing:2px;
+  margin:0;
+}
+
+.final-subtitle{
+  color:#dcb85a;
+  font-size:20px;
+  letter-spacing:4px;
+  margin-top:8px;
+  font-weight:700;
+}
+
+.final-address{
+  margin-top:10px;
+  font-size:16px;
+  opacity:.9;
+}
+
+.final-nav{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  gap:10px;
+  max-width:1050px;
+  margin:20px auto;
+  padding:0 15px;
+}
+
+.final-nav a{
+  text-decoration:none;
+  text-align:center;
+  padding:15px 8px;
+  border:1px solid #7c6728;
+  border-radius:10px;
+  color:#fff;
+  background:rgba(8,30,22,.75);
+  font-weight:700;
+}
+
+.final-nav a:hover{
+  background:#dcb85a;
+  color:#111;
+}
+
+.hero-final{
+  max-width:1100px;
+  margin:30px auto;
+  padding:60px 20px;
+  text-align:center;
+  border-top:1px solid rgba(220,184,90,.35);
+  border-bottom:1px solid rgba(220,184,90,.35);
+}
+
+.hero-small{
+  color:#dcb85a;
+  letter-spacing:5px;
+  font-weight:700;
+}
+
+.hero-final h1{
+  font-family:Georgia,serif;
+  font-size:clamp(38px,6vw,72px);
+  margin:15px 0;
+}
+
+.hero-final p{
+  font-size:19px;
+  opacity:.9;
+}
+
+.hero-buttons{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(180px,300px));
+  justify-content:center;
+  gap:12px;
+  margin-top:30px;
+}
+
+.hero-buttons a{
+  background:linear-gradient(135deg,#f0ca65,#c99d32);
+  color:#111;
+  text-decoration:none;
+  padding:17px 20px;
+  border-radius:14px;
+  font-size:17px;
+  font-weight:800;
+}
+
+.live-final{
+  max-width:1050px;
+  margin:30px auto;
+  padding:25px;
+  border:1px solid #c69b39;
+  border-radius:18px;
+  background:rgba(0,0,0,.45);
+}
+
+.live-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:25px;
+  align-items:center;
+}
+
+.live-image{
+  min-height:260px;
+  border-radius:14px;
+  border:1px solid #725c25;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:
+  radial-gradient(circle at center,rgba(0,100,60,.35),transparent 60%),
+  #07140f;
+}
+
+.live-image h2{
+  font-family:Georgia,serif;
+  color:#e0bd59;
+  font-size:34px;
+}
+
+.live-badge{
+  color:#ff3030;
+  font-size:20px;
+  font-weight:900;
+}
+
+.youtube-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:13px 22px;
+  border-radius:8px;
+  background:#e1b93f;
+  color:#111;
+  text-decoration:none;
+  font-weight:900;
+}
+
+.final-section{
+  max-width:1100px;
+  margin:45px auto;
+  padding:20px;
+}
+
+.final-section h2{
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:34px;
+}
+
+.section-line{
+  width:80px;
+  height:3px;
+  background:#dcb85a;
+  margin:12px auto 30px;
+}
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.final-card{
+  padding:25px;
+  border:1px solid rgba(220,184,90,.4);
+  border-radius:14px;
+  background:rgba(5,25,18,.7);
+}
+
+.final-card h3{
+  color:#e0bd59;
+}
+
+.contact-final{
+  text-align:center;
+  padding:50px 20px;
+  border-top:1px solid rgba(220,184,90,.3);
+}
+
+.back-top{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  border:1px solid #dcb85a;
+  background:#07150f;
+  color:#dcb85a;
+  font-size:22px;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+@media(max-width:800px){
+  .final-nav{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .live-grid{
+    grid-template-columns:1fr;
+  }
+
+  .card-grid{
+    grid-template-columns:1fr;
+  }
+
+  .final-logo{
+    width:145px;
+    height:145px;
+  }
+}
+
+@media(max-width:520px){
+  .final-header{
+    padding-top:25px;
+  }
+
+  .final-title{
+    font-size:32px;
+  }
+
+  .final-subtitle{
+    font-size:15px;
+  }
+
+  .final-nav{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .hero-final{
+    padding:45px 15px;
+  }
+
+  .hero-final h1{
+    font-size:40px;
+  }
+
+  .hero-buttons{
+    grid-template-columns:1fr;
+  }
+
+  .live-final{
+    margin:20px 10px;
+    padding:15px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<!-- CLEAN PROFESSIONAL HEADER -->
+<header class="final-header" id="home">
 
-<header class="header">
+  <img
+    class="final-logo"
+    src="logo.png"
+    alt="Masjid-e-Tawheed Ahle Hadees Logo"
+    onerror="this.style.display='none'"
+  >
 
-  <div class="wrap nav">
+  <h1 class="final-title">MASJID-E-TAWHEED</h1>
 
-    <!-- LOGO + MASJID NAME -->
-    <a class="brand" href="#home">
+  <div class="final-subtitle">AHLE HADEES</div>
 
-      <img src="logo-transparent.png"
-     alt="Masjid-e-Tawheed Ahle Hadees"
-     class="main-logo">
-
-<span class="brand-text">
-  <b>MASJID-E-TAWHEED</b>
-  <small>AHLE HADEES</small>
-  <em>Umar Bagh • JP Nagar • Bangalore - 78</em>
-</span>
-
-    </a>
-    </div>
-
-    <!-- MOBILE MENU -->
-    <button
-      class="menu"
-      type="button"
-      aria-label="Open menu"
-      onclick="document.body.classList.toggle('menu-open')">
-      ☰
-    </button>
-
+  <div class="final-address">
+    Umar Bagh • JP Nagar • Bangalore - 78
   </div>
-
-  <!-- NAVIGATION -->
-  <nav class="main-nav">
-
-    <div class="wrap nav-links">
-
-      <a href="#home">⌂ Home</a>
-      <a href="#prayer">🕌 Prayer</a>
-      <a href="#khutbah">🎙 Khutbah</a>
-      <a href="#imams">👥 Imams</a>
-      <a href="#programs">📅 Programs</a>
-      <a href="#media">▶ Media</a>
-
-    </div>
-
-  </nav>
 
 </header>
 
 
-<main>
+<nav class="final-nav">
+
+  <a href="#home">🏠 HOME</a>
+  <a href="#prayer">🕐 PRAYER TIMES</a>
+  <a href="#khutbah">🎙 KHUTBAH</a>
+  <a href="#imams">👤 IMAMS</a>
+  <a href="#programs">📅 PROGRAMS</a>
+  <a href="#media">▶ MEDIA</a>
+
+</nav>
 
 
-<!-- =========================================
-     PREMIUM HERO
-========================================= -->
+<main class="final-home">
 
-<section id="home" class="hero">
+<section class="hero-final">
 
-  <div class="hero-glow"></div>
+  <div class="hero-small">
+    MASJID-E-TAWHEED • AHLE HADEES
+  </div>
 
-  <div class="wrap hero-grid">
+  <h1>MASJID-E-TAWHEED<br>AHLE HADEES</h1>
 
-    <div class="hero-copy">
+  <p>
+    Umar Bagh • JP Nagar • Bangalore
+  </p>
 
-      <div class="eyebrow">
-        MASJID-E-TAWHEED • AHLE HADEES
+  <p>
+    Qur'an • Sunnah • Salah • Islamic Education • Community Service
+  </p>
+
+  <div class="hero-buttons">
+
+    <a href="#prayer">🕌 Prayer Times</a>
+
+    <a href="#khutbah">🎙 Jumu'ah Khutbah</a>
+
+    <a href="#programs">📚 Programs</a>
+
+    <a href="#media">▶ Watch Videos</a>
+
+  </div>
+
+</section>
+
+
+<section class="live-final">
+
+  <div class="live-grid">
+
+    <div class="live-image">
+      <div>
+        <div class="live-badge">🔴 LIVE PROGRAM</div>
+        <h2>JUMU'AH<br>KHUTBAH</h2>
       </div>
-
-      <h1>
-        MASJID-E-TAWHEED
-        <span>AHLE HADEES</span>
-      </h1>
-
-      <p class="hero-location">
-        Umar Bagh • JP Nagar • Bangalore
-      </p>
-
-      <p class="lead">
-        Qur'an • Sunnah • Salah • Islamic Education • Community Service
-      </p>
-
-
-      <!-- PREMIUM BUTTON SYSTEM -->
-
-      <div class="hero-buttons">
-
-        <a class="btn btn-gold" href="#prayer">
-          <span>🕌</span>
-          Prayer Times
-        </a>
-
-        <a class="btn btn-dark" href="#khutbah">
-          <span>🎙️</span>
-          Jumu'ah Khutbah
-        </a>
-
-        <a class="btn btn-dark" href="#programs">
-          <span>📚</span>
-          Programs
-        </a>
-
-        <a class="btn btn-dark" href="#media">
-          <span>▶</span>
-          Watch Videos
-        </a>
-
-      </div>
-
     </div>
 
+    <div>
 
-    <!-- HERO PREMIUM CARD -->
+      <div class="live-badge">LIVE NOW</div>
 
-    <div class="hero-card">
-
-      <div class="card-label">
-        MASJID-E-TAWHEED
-      </div>
-
-      <div class="hero-card-title">
-        AHLE HADEES
-      </div>
+      <h2>Jumu'ah Khutbah</h2>
 
       <p>
-        Umar Bagh • JP Nagar • Bangalore
+        Shaikh Abdurrab Faizi Hafizahullah
       </p>
 
-      <div class="hero-card-line"></div>
-
-      <a href="#prayer" class="text-link">
-        View Prayer Times →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     QUICK ACCESS
-========================================= -->
-
-<section class="quick-access">
-
-  <div class="wrap">
-
-    <div class="quick-links">
-
-      <a href="#prayer">
-        <span>🕌</span>
-        <b>Prayer Times</b>
-        <small>Today's Salah</small>
-      </a>
-
-      <a href="#khutbah">
-        <span>🎙️</span>
-        <b>Jumu'ah</b>
-        <small>Khutbah Schedule</small>
-      </a>
-
-      <a href="#programs">
-        <span>📖</span>
-        <b>Programs</b>
-        <small>Islamic Activities</small>
-      </a>
-
-      <a href="#media">
-        <span>▶</span>
-        <b>Media</b>
-        <small>Watch Videos</small>
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     PRAYER TIMES
-========================================= -->
-
-<section id="prayer" class="section prayer-section">
-
-  <div class="wrap">
-
-    <div class="section-head">
-
-      <div>
-        <div class="eyebrow">
-          DAILY SALAH
-        </div>
-
-        <h2>
-          Prayer Times
-        </h2>
-
-        <p>
-          Today's prayer timings for Masjid-e-Tawheed.
-        </p>
-      </div>
-
-      <div class="date-box large">
-        <b id="prayerDate">Today</b>
-        <span>Umar Bagh • Bangalore</span>
-      </div>
-
-    </div>
-
-
-    <!-- Existing JS will populate this -->
-
-    <div class="prayer-grid" id="prayerGrid"></div>
-
-    <div class="section-note">
-      Prayer timings are editable by the Masjid committee.
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     JUMUAH KHUTBAH
-========================================= -->
-
-<section id="khutbah" class="section dark-section">
-
-  <div class="wrap">
-
-    <div class="section-head light-head">
-
-      <div>
-
-        <div class="eyebrow">
-          EVERY FRIDAY
-        </div>
-
-        <h2>
-          Jumu'ah Khutbah
-        </h2>
-
-        <p>
-          Upcoming Khutbahs, speakers, topics and timings.
-        </p>
-
-      </div>
-
-      <a class="btn btn-gold" href="#contact">
-        Request Update
-      </a>
-
-    </div>
-
-
-    <div class="event-grid" id="khutbahGrid"></div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     IMAMS
-========================================= -->
-
-<section id="imams" class="section dark-section">
-
-  <div class="wrap">
-
-    <div class="section-head light-head">
-
-      <div>
-
-        <div class="eyebrow">
-          IMAM & KHATIB
-        </div>
-
-        <h2>
-          Our Imams & Khateebs
-        </h2>
-
-        <p>
-          Introduction and information about the Masjid's Imams.
-        </p>
-
-      </div>
-
-      <div class="slider-buttons">
-
-        <button id="imamNext" class="round-btn" type="button">
-          →
-        </button>
-
-      </div>
-
-    </div>
-
-
-    <div class="imam-slider" id="imamSlider"></div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     SCHOLARS
-========================================= -->
-
-<section id="scholars" class="section dark-section">
-
-  <div class="wrap">
-
-    <div class="section-head light-head">
-
-      <div>
-
-        <div class="eyebrow">
-          SCHOLARS
-        </div>
-
-        <h2>
-          Our Scholars
-        </h2>
-
-      </div>
-
-    </div>
-
-    <div class="scholar-grid" id="scholarsGrid"></div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     PROGRAMS
-========================================= -->
-
-<section id="programs" class="section cream-section">
-
-  <div class="wrap">
-
-    <div class="section-head">
-
-      <div>
-
-        <div class="eyebrow">
-          YEAR-ROUND
-        </div>
-
-        <h2>
-          Programs & Services
-        </h2>
-
-        <p>
-          Islamic education, community programs and beneficial activities.
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <div class="program-grid">
-
-      <article class="program-card">
-
-        <span>01</span>
-
-        <h3>
-          Jumu'ah Khutbah
-        </h3>
-
-        <p>
-          Weekly Friday Khutbah with speaker details, topic and timing.
-        </p>
-
-        <a href="#khutbah">
-          View Khutbah →
-        </a>
-
-      </article>
-
-
-      <article class="program-card">
-
-        <span>02</span>
-
-        <h3>
-          Maktab & Tarbiyah
-        </h3>
-
-        <p>
-          Children's Islamic education, Qur'an learning and character building.
-        </p>
-
-        <a href="#contact">
-          Learn More →
-        </a>
-
-      </article>
-
-
-      <article class="program-card">
-
-        <span>03</span>
-
-        <h3>
-          Seerah & Duroos
-        </h3>
-
-        <p>
-          Lectures, Seerah series, Hadith and beneficial Islamic reminders.
-        </p>
-
-        <a href="#media">
-          Watch Media →
-        </a>
-
-      </article>
-
-
-      <article class="program-card">
-
-        <span>04</span>
-
-        <h3>
-          Ramadan
-        </h3>
-
-        <p>
-          Ramadan timetable, Taraweeh, Iftar, Sehri and special programs.
-        </p>
-
-        <a href="#contact">
-          Details →
-        </a>
-
-      </article>
-
-
-      <article class="program-card">
-
-        <span>05</span>
-
-        <h3>
-          Hajj & Dhul Hijjah
-        </h3>
-
-        <p>
-          Hajj guidance, Eid arrangements and seasonal reminders.
-        </p>
-
-        <a href="#media">
-          Explore →
-        </a>
-
-      </article>
-
-
-      <article class="program-card">
-
-        <span>06</span>
-
-        <h3>
-          Community Service
-        </h3>
-
-        <p>
-          Charity drives, food distribution and welfare initiatives.
-        </p>
-
-        <a href="#contact">
-          Contact →
-        </a>
-
-      </article>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     MEDIA / YOUTUBE
-========================================= -->
-
-<section id="media" class="section media-section">
-
-  <div class="wrap">
-
-    <div class="section-head">
-
-      <div>
-
-        <div class="eyebrow">
-          MEDIA
-        </div>
-
-        <h2>
-          Khutbahs & Video Gallery
-        </h2>
-
-        <p>
-          Watch lectures, Jumu'ah Khutbahs and Islamic programs.
-        </p>
-
-      </div>
-
-
-      <a class="youtube-btn"
-         href="https://www.youtube.com/@MasjidETawheed-blr"
-         target="_blank"
-         rel="noopener">
-
-        <span>▶</span>
-        Visit YouTube
-
-      </a>
-
-    </div>
-
-
-    <div class="video-stage">
-
-      <div class="video-art" id="videoArea">
-
-    <div class="live-title">
+      <p>
         MASJID-E-TAWHEED AHLE HADEES
-        <small>Umar Bagh, J.P. Nagar, Bangalore - 78</small>
+      </p>
+
+      <a
+        class="youtube-btn"
+        href="https://www.youtube.com/@MasjidETawheed-blr"
+        target="_blank"
+        rel="noopener"
+      >
+        ▶ WATCH ON YOUTUBE →
+      </a>
+
     </div>
 
-    <iframe
+  </div>
+
+</section>
+
+
+<section id="prayer" class="final-section">
+
+  <h2>Prayer Times</h2>
+  <div class="section-line"></div>
+
+  <div class="card-grid" id="prayerGrid">
+
+    <article class="final-card">
+      <h3>Fajr</h3>
+      <p>05:30 AM</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Sunrise</h3>
+      <p>06:10 AM</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Dhuhr</h3>
+      <p>01:15 PM</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Asr</h3>
+      <p>04:15 PM</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Maghrib</h3>
+      <p>06:30 PM</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Isha</h3>
+      <p>08:30 PM</p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="khutbah" class="final-section">
+
+  <h2>Jumu'ah Khutbah</h2>
+  <div class="section-line"></div>
+
+  <div class="card-grid" id="khutbahGrid">
+
+    <article class="final-card">
+      <h3>Friday Khutbah</h3>
+      <p>Topic: Takabbur Ki Holnakiyan</p>
+      <p>Shaikh Abdurrab Faizi Hafizahullah</p>
+      <p>Friday • 12:45 PM</p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="imams" class="final-section">
+
+  <h2>Our Imams & Khateebs</h2>
+  <div class="section-line"></div>
+
+  <div class="card-grid" id="imamSlider">
+
+    <article class="final-card">
+      <h3>Imams & Khateebs</h3>
+      <p>
+        Introduction and information about the Masjid's Imams.
+      </p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="programs" class="final-section">
+
+  <h2>Programs & Services</h2>
+  <div class="section-line"></div>
+
+  <div class="card-grid">
+
+    <article class="final-card">
+      <h3>Jumu'ah Khutbah</h3>
+      <p>Weekly Friday Khutbah with speaker details, topic and timing.</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Maktab & Tarbiyah</h3>
+      <p>Children's Islamic education, Qur'an learning and character building.</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Seerah & Duroos</h3>
+      <p>Lectures, Seerah series, Hadith and beneficial Islamic reminders.</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Ramadan</h3>
+      <p>Ramadan timetable, Taraweeh, Iftar, Sehri and special programs.</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Hajj & Dhul Hijjah</h3>
+      <p>Hajj guidance, Eid arrangements and seasonal reminders.</p>
+    </article>
+
+    <article class="final-card">
+      <h3>Community Service</h3>
+      <p>Charity drives, food distribution and welfare initiatives.</p>
+    </article>
+
+  </div>
+
+</section>
+
+
+<section id="media" class="final-section">
+
+  <h2>Khutbahs & Video Gallery</h2>
+  <div class="section-line"></div>
+
+  <div class="live-final">
+
+    <h2>Featured Video</h2>
+
+    <p>
+      Watch lectures, Jumu'ah Khutbahs and Islamic programs.
+    </p>
+
+    <a
+      class="youtube-btn"
+      href="https://www.youtube.com/@MasjidETawheed-blr"
+      target="_blank"
+      rel="noopener"
+    >
+      ▶ Visit YouTube Channel
+    </a>
+
+    <div id="videoArea" style="margin-top:25px">
+
+      <iframe
         width="100%"
         height="315"
-        src="https://www.youtube.com/embed/live_stream?channel=UCoCxR4wjc3NB_7orQVK7fwQ"
+        src="https://www.youtube.com/embed/live_stream?channel=UCoCxRwjC3NB_ZQrQVK7fwQ"
         title="Masjid-e-Tawheed Ahle Hadees Live"
         frameborder="0"
         allow="autoplay; encrypted-media; picture-in-picture"
         allowfullscreen>
-    </iframe>
-
-      </div>
-
-      <div class="video-info">
-
-        <div class="eyebrow">
-          FEATURED VIDEO
-        </div>
-
-        <h3 id="videoTitle">
-          Jumu'ah Khutbah
-        </h3>
-
-        <p id="videoDesc">
-          Masjid-e-Tawheed Ahle Hadees
-        </p>
-
-      </div>
-
-    </div>
-
-
-    <div class="dots" id="videoDots"></div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================
-     NEXT PROGRAM / COUNTDOWN
-========================================= -->
-
-<section class="section countdown-section">
-
-  <div class="wrap">
-
-    <div class="countdown">
-
-      <div class="countdown-copy">
-
-        <div class="eyebrow">
-          NEXT SPECIAL PROGRAM
-        </div>
-
-        <h2 id="countTitle">
-          Monthly Deeni Program
-        </h2>
-
-        <p id="countText">
-          Shaikh Abdul Haseeb Madani Hafizahullah
-        </p>
-
-      </div>
-
-
-      <div class="timer" id="timer">
-
-        <span>
-          <b id="days">00</b>
-          <small>Days</small>
-        </span>
-
-        <span>
-          <b id="hours">00</b>
-          <small>Hours</small>
-        </span>
-
-        <span>
-          <b id="mins">00</b>
-          <small>Minutes</small>
-        </span>
-
-        <span>
-          <b id="secs">00</b>
-          <small>Seconds</small>
-        </span>
-
-      </div>
-
-
-      <div class="digital-clock" id="liveClock">
-        00:00:00
-      </div>
+      </iframe>
 
     </div>
 
@@ -669,126 +557,65 @@ content="Masjid-e-Tawheed Ahle Hadees, Umar Bagh, JP Nagar, Bangalore. Prayer Ti
 </section>
 
 
+<section id="contact" class="contact-final">
 
-<!-- =========================================
-     CONTACT
-========================================= -->
+  <h2>MASJID-E-TAWHEED</h2>
 
-<section id="contact" class="section contact-section">
+  <p>
+    Ahle Hadees
+  </p>
 
-  <div class="wrap contact-grid">
+  <p>
+    Umar Bagh, JP Nagar, Bangalore - 78
+  </p>
 
+  <p>
 
-    <div class="contact-intro">
+    <a
+      class="youtube-btn"
+      href="https://www.google.com/maps/search/?api=1&query=Masjid-e-Tawheed+Ahle+Hadees+Umar+Bagh+JP+Nagar+Bangalore"
+      target="_blank"
+      rel="noopener"
+    >
+      📍 Open Google Maps
+    </a>
 
-      <div class="eyebrow">
-        CONNECT
-      </div>
+  </p>
 
-      <h2>
-        MASJID-E-TAWHEED
-      </h2>
+  <p>
 
-      <p>
-        <b>Address</b><br>
-        Umar Bagh, JP Nagar, Bangalore
-      </p>
+    <a
+      class="youtube-btn"
+      href="https://www.youtube.com/@MasjidETawheed-blr"
+      target="_blank"
+      rel="noopener"
+    >
+      ▶ YouTube
+    </a>
 
-
-      <div class="actions">
-
-        <a class="btn btn-gold"
-           href="https://www.google.com/maps/search/?api=1&query=Masjid-e-Tawheed+Ahle+Hadees+Umar+Bagh+JP+Nagar+Bangalore"
-           target="_blank"
-           rel="noopener">
-
-          📍 Open Maps
-
-        </a>
-
-      </div>
-
-    </div>
-
-
-    <div class="contact-card">
-
-      <h3>
-        Stay Connected
-      </h3>
-
-      <p>
-        Masjid-e-Tawheed Ahle Hadees — Umar Bagh, JP Nagar, Bangalore.
-      </p>
-
-
-      <div class="contact-list">
-
-        <a href="https://www.google.com/maps/search/?api=1&query=Masjid-e-Tawheed+Ahle+Hadees+Umar+Bagh+JP+Nagar+Bangalore"
-           target="_blank"
-           rel="noopener">
-          📍 Google Maps
-        </a>
-
-        <a href="https://www.youtube.com/@MasjidETawheed-blr"
-           target="_blank"
-           rel="noopener">
-          ▶ YouTube
-        </a>
-
-        <a href="https://wa.me/917795736080"
-           target="_blank"
-           rel="noopener">
-          💬 WhatsApp
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
+  </p>
 
 </section>
-
 
 </main>
 
 
+<footer class="contact-final">
 
-<!-- =========================================
-     FOOTER
-========================================= -->
+  <strong>MASJID-E-TAWHEED AHLE HADEES</strong>
 
-<footer>
+  <p>
+    Umar Bagh • JP Nagar • Bangalore
+  </p>
 
-  <div class="wrap footer-content">
-
-    <div>
-
-      <b>
-        MASJID-E-TAWHEED AHLE HADEES
-      </b>
-
-      <small>
-        Umar Bagh • JP Nagar • Bangalore
-      </small>
-
-    </div>
-
-    <div>
-      © 2026 Masjid-e-Tawheed
-    </div>
-
-  </div>
+  <small>
+    © 2026 Masjid-e-Tawheed
+  </small>
 
 </footer>
 
 
-<!-- BACK TO TOP -->
-
-<a href="#home"
-   class="back-top"
-   aria-label="Back to top">
+<a href="#home" class="back-top" aria-label="Back to top">
   ↑
 </a>
 
@@ -796,4 +623,4 @@ content="Masjid-e-Tawheed Ahle Hadees, Umar Bagh, JP Nagar, Bangalore. Prayer Ti
 <script src="script.js"></script>
 
 </body>
-  </html>
+</html>
