@@ -78,3 +78,13 @@ code{color:#dcb85a}
  .next-prayer{align-items:flex-start;flex-direction:column}
  .countdown{font-size:25px}
 }
+.service-btn{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+}
+
+.service-btn:hover{
+  color:inherit;
+  text-decoration:none;
+}
