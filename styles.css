@@ -42,7 +42,29 @@ body{margin:0;background:#030806;color:#f5f3ed;font-family:Arial,Helvetica,sans-
 .info-card{padding:22px}
 .info-card h3{color:#e0bd65;margin-top:0}
 .imam-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.person-card{padding:15px;text-align:center}
+.person-card{
+  padding:15px;
+  text-align:center;
+  display:block;
+  color:inherit !important;
+  text-decoration:none !important;
+  cursor:pointer;
+}
+
+.person-card:link,
+.person-card:visited,
+.person-card:hover,
+.person-card:active{
+  color:inherit !important;
+  text-decoration:none !important;
+}
+
+.person-card h3,
+.person-card p,
+.person-card .card-action{
+  color:inherit !important;
+  text-decoration:none !important;
+}
 .person-photo{height:250px;border-radius:10px;background:linear-gradient(135deg,#0b3b25,#020806);border:1px solid #806b2b;display:flex;align-items:center;justify-content:center}
 .person-photo:after{content:"IMAM / KHATEEB";color:#dcb85a;font-weight:800;letter-spacing:2px}
 .photo-note{text-align:center;color:#9ca69f;font-size:13px}
