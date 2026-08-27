@@ -86,3 +86,25 @@ code{color:#dcb85a}
   color: inherit !important;
   text-decoration: none !important;
 }
+.person-card{
+  display:block;
+  color:inherit;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.person-card:hover{
+  color:inherit;
+  text-decoration:none;
+}
+
+.person-card h3,
+.person-card p,
+.person-card .card-action{
+  color:inherit;
+  text-decoration:none;
+}
+
+.person-card .card-action{
+  display:inline-block;
+}
