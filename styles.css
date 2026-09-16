@@ -130,3 +130,54 @@ code{color:#dcb85a}
 .person-card .card-action{
   display:inline-block;
 }
+/* Upcoming Programs */
+#upcoming-programs{
+  padding:40px 16px;
+}
+
+#upcoming-programs .program-posters{
+  max-width:1100px;
+  margin:25px auto 0;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+}
+
+#upcoming-programs .program-poster{
+  background:#061812;
+  border:1px solid #dcb85a;
+  border-radius:16px;
+  padding:12px;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+#upcoming-programs .program-poster img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:12px;
+}
+
+#upcoming-programs .program-poster h3{
+  color:#dcb85a;
+  margin:14px 5px 6px;
+  font-size:22px;
+}
+
+#upcoming-programs .program-poster p{
+  color:#fff;
+  margin:0 5px 8px;
+  line-height:1.5;
+}
+
+@media(max-width:700px){
+  #upcoming-programs .program-posters{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  #upcoming-programs .program-poster h3{
+    font-size:20px;
+  }
+}
